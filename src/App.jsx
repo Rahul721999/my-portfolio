@@ -1,7 +1,8 @@
+import { Navbar } from "./components"
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      My Portfolio website
-    </h1>
+    <div className="min-h-screen text-black dark:text-white">
+      <Navbar/>
+    </div>
   )
 }

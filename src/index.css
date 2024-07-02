@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.padding-x-10p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  

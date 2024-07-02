@@ -10,6 +10,12 @@ export default {
       'light-theme' : '#ededed',
       'cyan' : '#00abf0'
     },
+    letterSpacing:{
+      'widest' : '1px',
+    },
+    zIndex:{
+      '1':'1',
+    }
   },
   plugins: [],
 }

@@ -7,8 +7,7 @@ export default {
   theme: {
     colors: {
       'dark-theme': '#081b29',
-      'light-theme' : '#ffffff',
-      'navbar-font-color' : '#ededed',
+      'light-theme' : '#ededed',
       'navbar-font-hover' : '#00abf0'
     },
   },

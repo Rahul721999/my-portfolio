@@ -7,43 +7,18 @@
   font-family: 'Poppins', 'sans-serif';
 }
 
+:root {
+  --bg-color: #ededed;
+  --text-color: #081b29;
+}
+
+[data-theme='light'] {
+  --bg-color: #081b29;
+  --text-color: #ededed;
+}
+
 body {
-  background: #081b29;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 10%;
-  background: transparent;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 100;
-
-}
-
-/* Header Logo */
-header a {
-  font-size: 25px;
-  font-weight: bold;
-  color: #ededed;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-/* navigation bar
-nav a:hover,
-nav a.active {
-  font-size: 1.125rem; 
-  line-height: 1.75rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #00abf0;
-} */
-
-header nav {
-  display: flex;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }

@@ -8,7 +8,7 @@ export default {
     colors: {
       'dark-theme': '#081b29',
       'light-theme' : '#ededed',
-      'navbar-font-hover' : '#00abf0'
+      'cyan' : '#00abf0'
     },
   },
   plugins: [],

@@ -1,8 +1,8 @@
-import { Navbar } from "./components";
+import { Navbar, Home } from "./components";
 import React, {useState, useEffect} from "react";
 
 export default function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -15,6 +15,7 @@ export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar toggleTheme = {toggleTheme} theme={theme}/>
+      <Home/>
     </div>
   )
 }

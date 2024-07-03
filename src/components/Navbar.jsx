@@ -3,7 +3,7 @@ import moonIcon from '../assets/moon.svg';
 import sunIcon from '../assets/sun.svg';
 
 const Navbar = ({ toggleTheme, theme }) => {
-    const themeIcon = theme === 'light' ? sunIcon : moonIcon;
+    const themeIcon = theme === 'light' ? moonIcon : sunIcon;
     return (
         <header className="fixed top-0 left-0 w-full z-100 padding-x-10p p-[20px] flex items-center justify-between bg-transparent">
             <a className="text-2xl font-bold ">Rahul.</a>

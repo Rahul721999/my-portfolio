@@ -23,8 +23,18 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Home page Section*/
+.section-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+
 /* Hire me button from Home page*/
-.hire-me-btn::before{
+.hire-me-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -36,15 +46,16 @@ body {
   transition: .5s;
 }
 
-.hire-me-btn:hover::before{
+.hire-me-btn:hover::before {
   width: 100%;
 }
+
 .hire-me-btn:hover {
   color: var(--text-color);
 }
 
 /* Hire me button from Home page*/
-.lets-talk-btn::before{
+.lets-talk-btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -56,10 +67,48 @@ body {
   transition: .5s;
 }
 
-.lets-talk-btn:hover::before{
+.lets-talk-btn:hover::before {
   width: 100%;
 }
+
 .lets-talk-btn:hover {
   color: var(--bg-color);
   border: none;
+}
+
+
+/* Social media logos*/
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  bottom: 100px;
+  width: 175px;
+  position: absolute;
+}
+
+/* Link styling */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0;
+  padding: 0.1rem;
+  height: 40px;
+  width: 40px;
+  background-color: var(--bg-color);
+  border: 1px solid #00abf0;
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #00abf0;
+}
+
+/* Image styling */
+.social-icon {
+  width: 2.5rem;
+  fill: var(--text-color);
 }

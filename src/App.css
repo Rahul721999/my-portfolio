@@ -32,6 +32,11 @@ body {
   transition: background-color 0.3s ease;
 }
 
+/* Nav Bar component*/
+.nav-bar-component:hover{
+  text-shadow: 0 0 20px #00abf0;
+}
+
 
 /* Hire me button from Home page*/
 .hire-me-btn::before {
@@ -52,6 +57,7 @@ body {
 
 .hire-me-btn:hover {
   color: var(--text-color);
+  box-shadow: 0 0 30px #00abf0;
 }
 
 /* Hire me button from Home page*/
@@ -74,6 +80,7 @@ body {
 .lets-talk-btn:hover {
   color: var(--bg-color);
   border: none;
+  box-shadow: 0 0 30px #00abf0;
 }
 
 
@@ -105,6 +112,7 @@ body {
 
 .social-link:hover {
   background-color: #00abf0;
+  box-shadow: 0 0 20px #00abf0;
 }
 
 /* Image styling */

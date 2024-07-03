@@ -21,10 +21,10 @@ const Home = () => {
             <div className="max-w-screen-sm ">
                 <h1 className="text-4xl font-bold leading-tight intro-tag">
                     Hi, I'm
-                    <span className="gradient-text intro-tag"> Rahul Mondal</span>
+                    <span className="name-tag"> Rahul Mondal</span>
 
                 </h1>
-                <h3 className="text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="text-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"></span></h3>
+                <h3 className="text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="gradient-text"></span></h3>
                 <p className="text-base my-5 mb-10 ">
                     Aspiring and versatile software artisan with a flair for AI and 3 year of experience in Rust programming.
                     Eagerly pursuing a riveting software development role where creativity meats innovation,

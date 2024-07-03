@@ -11,6 +11,7 @@
   --bg-color: #ededed;
   --text-color: #081b29;
   --gradient-color: linear-gradient(to right, var(--text-color), #98b6be);
+  --animated-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 }
 
 [data-theme='dark'] {
@@ -27,7 +28,7 @@ body {
 
 
 /* ----------------------Nav Bar component----------------------*/
-.nav-bar-component{
+.nav-bar-component {
   transition: .3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;
@@ -35,12 +36,12 @@ body {
 }
 
 
-.nav-bar-component:hover{
+.nav-bar-component:hover {
   text-shadow: 0 0 20px #00abf0;
 }
 
 /* Logo */
-.logo{
+.logo {
   cursor: default;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -50,17 +51,26 @@ body {
 .intro-tag {
   transition: .3s;
   opacity: 0;
-  animation: slideBottom 1.5s ease forwards;
+  animation: slideLeft 1.5s ease forwards;
   animation-delay: .3s;
 }
-.gradient-text{
+.name-tag{
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.designation-tag{
+.gradient-text {
+  background: var(--animated-gradient);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-animation 15s ease infinite;
+}
+
+.designation-tag {
   transition: .3s;
   opacity: 0;
   animation: slideLeft 1.5s ease forwards;
@@ -162,42 +172,63 @@ body {
 /* -----------------------------------KEYFRAME ANIMATION----------------------------------- */
 
 @keyframes slideRight {
-  0%{
+  0% {
     transform: translateX(-100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slideLeft {
-  0%{
+  0% {
     transform: translateX(100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 @keyframes slideTop {
-  0%{
+  0% {
     transform: translateY(100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 @keyframes slideBottom {
-  0%{
+  0% {
     transform: translateY(-100px);
     opacity: 0;
   }
-  100%{
+
+  100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }

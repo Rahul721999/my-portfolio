@@ -10,11 +10,13 @@
 :root {
   --bg-color: #ededed;
   --text-color: #081b29;
+  --gradient-color: linear-gradient(to right, var(--text-color), #98b6be);
 }
 
 [data-theme='dark'] {
   --bg-color: #081b29;
   --text-color: #ededed;
+  --gradient-color: linear-gradient(to right, var(--text-color), #00abf0);
 }
 
 body {
@@ -23,16 +25,8 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Home page Section*/
-.section-container {
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transition: background-color 0.3s ease;
-}
 
-/* Nav Bar component*/
+/* ----------------------Nav Bar component----------------------*/
 .nav-bar-component{
   transition: .3s;
   opacity: 0;
@@ -50,6 +44,35 @@ body {
   cursor: default;
   opacity: 0;
   animation: slideRight 1s ease forwards;
+}
+
+/* -------------------------Home page Section-------------------------*/
+.intro-tag {
+  transition: .3s;
+  opacity: 0;
+  animation: slideBottom 1.5s ease forwards;
+  animation-delay: .3s;
+}
+.gradient-text{
+  background: var(--gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.designation-tag{
+  transition: .3s;
+  opacity: 0;
+  animation: slideLeft 1.5s ease forwards;
+  animation-delay: .3s;
+}
+
+.section-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: background-color 0.3s ease;
 }
 
 /* Hire me button from Home page*/
@@ -98,7 +121,7 @@ body {
 }
 
 
-/* Social media logos*/
+/* -----------------------------Social media logos-----------------------------*/
 .btn-container {
   display: flex;
   align-items: center;
@@ -136,7 +159,7 @@ body {
 }
 
 
-/* KEYFRAME ANIMATION */
+/* -----------------------------------KEYFRAME ANIMATION----------------------------------- */
 
 @keyframes slideRight {
   0%{
@@ -148,9 +171,29 @@ body {
     opacity: 1;
   }
 }
+@keyframes slideLeft {
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @keyframes slideTop {
   0%{
     transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0%{
+    transform: translateY(-100px);
     opacity: 0;
   }
   100%{

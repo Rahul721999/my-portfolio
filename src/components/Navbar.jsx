@@ -6,7 +6,7 @@ const Navbar = ({ toggleTheme, theme }) => {
     const themeIcon = theme === 'light' ? moonIcon : sunIcon;
     return (
         <header className="fixed top-0 left-0 w-full z-100 padding-x-10p p-[20px] flex items-center justify-between bg-transparent">
-            <a className="text-2xl font-bold ">Rahul.</a>
+            <a className="text-2xl font-bold logo">Rahul.</a>
             <nav className="flex">
                 <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Home</a>
                 <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">About</a>

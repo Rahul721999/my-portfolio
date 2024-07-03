@@ -2,7 +2,7 @@ import { Navbar, Home } from "./components";
 import React, { useState, useEffect } from "react";
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);

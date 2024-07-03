@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
+    extend : {colors: {
       'dark-theme': '#081b29',
       'light-theme' : '#ededed',
       'cyan' : '#00abf0'
@@ -15,7 +15,13 @@ export default {
     },
     zIndex:{
       '1':'1',
-    }
+    },
+    screens:{
+      'mobile' : '576px',
+      'tablet' : '860px',
+      'laptop' : '1024px',
+      'desktop' : '1280px',
+    }}
   },
   plugins: [],
 }

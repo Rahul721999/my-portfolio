@@ -8,11 +8,11 @@ const Navbar = ({ toggleTheme, theme }) => {
         <header className="fixed top-0 left-0 w-full z-100 padding-x-10p p-[20px] flex items-center justify-between bg-transparent">
             <a className="text-2xl font-bold logo">Rahul.</a>
             <nav className="flex">
-                <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Home</a>
-                <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">About</a>
-                <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Service</a>
-                <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Portfolio</a>
-                <a href="#" className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Contact</a>
+                <a href="#" style={{'--i':1}} className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Home</a>
+                <a href="#" style={{'--i':2}} className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">About</a>
+                <a href="#" style={{'--i':3}} className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Service</a>
+                <a href="#" style={{'--i':4}} className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Portfolio</a>
+                <a href="#" style={{'--i':5}} className="text-lg font-medium  mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component">Contact</a>
                 <button onClick={toggleTheme} className="flex rounded mr-9">
                     <img src={themeIcon} alt="Theme Icon" className="w-0.375rm h-0.375rem justify-center" />
                 </button>

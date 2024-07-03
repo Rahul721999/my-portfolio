@@ -33,6 +33,14 @@ body {
 }
 
 /* Nav Bar component*/
+.nav-bar-component{
+  transition: .3s;
+  opacity: 0;
+  animation: slideTop .5s ease forwards;
+  animation-delay: calc(.2s* var(--i));
+}
+
+
 .nav-bar-component:hover{
   text-shadow: 0 0 20px #00abf0;
 }
@@ -42,17 +50,6 @@ body {
   cursor: default;
   opacity: 0;
   animation: slideRight 1s ease forwards;
-}
-
-@keyframes slideRight {
-  0%{
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-  100%{
-    transform: translateX(0);
-    opacity: 1;
-  }
 }
 
 /* Hire me button from Home page*/
@@ -136,4 +133,28 @@ body {
 .social-icon {
   width: 2.5rem;
   fill: var(--text-color);
+}
+
+
+/* KEYFRAME ANIMATION */
+
+@keyframes slideRight {
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideTop {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

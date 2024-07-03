@@ -5,7 +5,7 @@ const Home = () => {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: [ 'Rust Software Developer', 'Full-Stack Web Developer.', 'Freelancer', 'Software Engineer', 'Photographer', 'AI Enthusiast'],
+            strings: ['Rust Software Developer', 'Full-Stack Web Developer.', 'Freelancer', 'Software Engineer', 'Photographer', 'AI Enthusiast'],
             typeSpeed: 20,
             backSpeed: 20,
             backDelay: 1000,
@@ -19,8 +19,8 @@ const Home = () => {
     return (
         <section className="h-screen flex justify-center flex-col transition-colors duration-300 section-container">
             <div className="max-w-screen-sm ">
-                <h1 className="text-4xl font-bold leading-tight intro-tag">
-                    Hi, I'm
+                <h1 className="text-4xl font-bold leading-tight">
+                    <span className="intro-tag">Hi, I'm&nbsp;</span>
                     <span className="name-tag"> Rahul Mondal</span>
 
                 </h1>

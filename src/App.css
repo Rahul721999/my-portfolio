@@ -49,16 +49,21 @@ body {
 
 /* -------------------------Home page Section-------------------------*/
 .intro-tag {
+  display: inline-block;
   transition: .3s;
   opacity: 0;
-  animation: slideLeft 1.5s ease forwards;
+  animation: slideRight 1.5s ease forwards;
   animation-delay: .3s;
 }
 .name-tag{
+  display: inline-block;
+  opacity: 0;
   background: var(--gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: slideBottom 1.5s ease forwards;
+  animation-delay: .3s;
 }
 
 .gradient-text {

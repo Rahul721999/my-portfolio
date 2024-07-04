@@ -1,4 +1,5 @@
-import { Navbar, Home } from "./components";
+import { Navbar} from "./components";
+import {Home} from "./pages";
 import React, { useState, useEffect } from "react";
 
 export default function App() {

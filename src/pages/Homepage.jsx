@@ -20,13 +20,13 @@ const Home = () => {
     return (
         <section className="h-screen flex justify-center flex-col transition-colors duration-300 section-container">
             <div className="max-w-screen-sm ">
-                <h1 className="text-6xl phone:text-4xl font-bold leading-tight">
+                <h1 className="tablet:text-6xl text-4xl font-bold leading-tight">
                     <span className="intro-tag">Hi, I'm&nbsp;</span>
                     <span className="name-tag"> Rahul Mondal</span>
 
                 </h1>
-                <h3 className="text-3xl phone:text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="gradient-text"></span></h3>
-                <p className="text-lg phone:text-base my-5 mb-10 ">
+                <h3 className="tablet:text-3xl text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="gradient-text"></span></h3>
+                <p className="tablet:text-lg text-base my-5 mb-10 ">
                     Aspiring and versatile software artisan with a flair for AI and 3 year of experience in Rust programming.
                     Eagerly pursuing a riveting software development role where creativity meats innovation,
                     to craft cutting-edge solutions and contribute to transformative projects

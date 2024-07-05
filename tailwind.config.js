@@ -16,12 +16,13 @@ export default {
     zIndex:{
       '1':'1',
     },
-    screens:{
-      'mobile' : '576px',
-      'tablet' : '860px',
-      'laptop' : '1024px',
-      'desktop' : '1280px',
-    }}
+    screens: {
+      'mobile' : '850px',
+      'tablet' : '1023px',
+      'laptop' : '1279px',
+      'desktop' : '1535px',
+    },
+  }
   },
   plugins: [],
 }

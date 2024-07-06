@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-import { MediaIcons, Photo } from "../components";
+import { MediaIcons, MobilePhoto, Photo } from "../components";
 
 const Home = () => {
     const el = useRef(null);
@@ -18,14 +18,15 @@ const Home = () => {
         };
     }, []);
     return (
-        <section className="h-screen w-screen flex  flex-row justify-start items-center transition-colors duration-300 section-container">
-                <div className="laptop:w-2/5">
-                    <h1 className="tablet:text-6xl text-4xl font-bold leading-tight">
+        <section className="h-screen w-screen flex flex-row justify-start items-center transition-colors duration-300 section-container">
+                <div className="laptop:w-3/5">
+                    <MobilePhoto/>
+                    <h1 className="text-center tablet:text-left tablet:text-6xl text-4xl font-bold leading-tight">
                         <span className="intro-tag">Hi, I'm&nbsp;</span>
                         <span className="name-tag"> Rahul Mondal</span>
                     </h1>
                     <h3 className="tablet:text-3xl text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="gradient-text"></span></h3>
-                    <p className="tablet:text-lg text-base text-left my-5 mb-10 ">
+                    <p className="text-pretty flex tablet:text-lg text-sm tablet:text-left my-5 mb-10 ">
                         Aspiring and versatile software artisan with a flair for AI and 3 year of experience in Rust programming.
                         Eagerly pursuing a riveting software development role where creativity meats innovation,
                         to craft cutting-edge solutions and contribute to transformative projects

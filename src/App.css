@@ -49,6 +49,14 @@ body {
 }
 
 /* -------------------------Home page Section-------------------------*/
+.section-container {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 .intro-tag {
   display: inline-block;
   transition: .3s;
@@ -82,12 +90,6 @@ body {
   opacity: 0;
   animation: slideLeft 1.5s ease forwards;
   animation-delay: .3s;
-}
-
-.section-container {
-  padding-left: 10%;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Hire me button from Home page*/

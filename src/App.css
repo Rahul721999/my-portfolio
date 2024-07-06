@@ -86,13 +86,8 @@ body {
 
 .section-container {
   padding-left: 10%;
-  padding-right: 10%;
   padding-top: 20px;
   padding-bottom: 20px;
-  transition: background-color 0.3s ease;
-  background-image: url("./assets/");
-  background-repeat: no-repeat;
-  background-position: right center;
 }
 
 /* Hire me button from Home page*/
@@ -148,7 +143,8 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  bottom: 100px;
+  /* bottom: 100px; */
+  padding-top: 50px;
   width: 175px;
   position:absolute;
 }
@@ -181,6 +177,7 @@ body {
 .menuIcon{
   fill: var(--text-color)
 }
+
 
 
 /* -----------------------------------KEYFRAME ANIMATION----------------------------------- */

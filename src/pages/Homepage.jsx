@@ -6,7 +6,7 @@ const Home = () => {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Rust Software Developer', 'Full-Stack Web Developer',  'Software Engineer', 'AI Enthusiast', 'Freelancer','Photographer'],
+            strings: ['Rust Software Developer', 'Full-Stack Web Developer', 'Software Engineer', 'AI Enthusiast', 'Freelancer', 'Photographer'],
             typeSpeed: 20,
             backSpeed: 20,
             backDelay: 1000,
@@ -18,8 +18,8 @@ const Home = () => {
         };
     }, []);
     return (
-        <section className="h-screen flex justify-center flex-col transition-colors duration-300 section-container">
-            <div className="max-w-screen-sm ">
+        <section className="h-screen w-screen flex justify-center flex-col transition-colors duration-300 section-container">
+            <div className="max-w-screen-sm tablet:w-3/5">
                 <h1 className="tablet:text-6xl text-4xl font-bold leading-tight">
                     <span className="intro-tag">Hi, I'm&nbsp;</span>
                     <span className="name-tag"> Rahul Mondal</span>
@@ -35,9 +35,9 @@ const Home = () => {
                     <a href="#" className="inline-flex justify-center items-center w-36 h-full text-lg rounded-lg border-solid font-bold tracking-widest relative overflow-hidden z-1 border-2 border-cyan bg-cyan text-dark-theme hire-me-btn">Hire Me</a>
                     <a href="#" className="inline-flex justify-center items-center w-36 h-full text-lg rounded-lg border-solid font-bold tracking-widest relative overflow-hidden z-1 border-2 border-cyan text-cyan bg-transparent lets-talk-btn">Let's Talk</a>
                 </div>
-            </div>
-            <div className="btn-container">
-                <MediaIcons/>
+                <div className="btn-container mt-auto">
+                    <MediaIcons />
+                </div>
             </div>
         </section>
     )

@@ -12,6 +12,7 @@
   --text-color: #081b29;
   --gradient-color: linear-gradient(to right, var(--text-color), #98b6be);
   --animated-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+
 }
 
 [data-theme='dark'] {
@@ -55,7 +56,8 @@ body {
   animation: slideRight 1.5s ease forwards;
   animation-delay: .3s;
 }
-.name-tag{
+
+.name-tag {
   display: inline-block;
   opacity: 0;
   background: var(--gradient-color);
@@ -88,6 +90,9 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   transition: background-color 0.3s ease;
+  background-image: url("./assets/");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 /* Hire me button from Home page*/
@@ -138,13 +143,14 @@ body {
 
 /* -----------------------------Social media logos-----------------------------*/
 .btn-container {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
   bottom: 100px;
   width: 175px;
-  position: absolute;
+  position:absolute;
 }
 
 /* Link styling */
@@ -171,6 +177,9 @@ body {
 .social-icon {
   width: 2.5rem;
   fill: var(--text-color);
+}
+.menuIcon{
+  fill: var(--text-color)
 }
 
 

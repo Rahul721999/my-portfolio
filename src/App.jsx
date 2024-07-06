@@ -14,7 +14,7 @@ export default function App() {
     setTheme(newTheme);
   };
   return (
-    <div className="min-h-screen">
+    <div>
       <Navbar toggleTheme={toggleTheme} theme={theme} />
       <Home />
     </div>

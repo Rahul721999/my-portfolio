@@ -35,6 +35,12 @@ body {
   animation: slideTop .5s ease forwards;
   animation-delay: calc(.2s* var(--i));
 }
+.nav-bar-component-mobile {
+  transition: .3s;
+  opacity: 0;
+  animation: slideLeft .5s ease forwards;
+  animation-delay: calc(.2s* var(--i));
+}
 
 
 .nav-bar-component:hover {
@@ -47,6 +53,17 @@ body {
   opacity: 0;
   animation: slideRight 1s ease forwards;
 }
+
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white background */
+  backdrop-filter: blur(10px); /* blurring effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* border to enhance glass effect */
+  padding: 1rem; /* some padding */
+  border-radius: 10px; /* rounded corners */
+}
+
 
 /* -------------------------Home page Section-------------------------*/
 .section-container {

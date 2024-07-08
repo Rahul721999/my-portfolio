@@ -15,7 +15,7 @@ export default function App() {
   };
   return (
     <div>
-      <Navbar toggleTheme={toggleTheme} theme={theme} />
+      <Navbar toggleTheme={toggleTheme} theme={theme} />  
       <Home />
     </div>
   )

@@ -1,3 +1,4 @@
+export {default as Menu} from './SideMenuBar';
 export {Photo, MobilePhoto} from './Photo';
 export {default as Navbar} from './Navbar';
 export {default as NavItems} from './NavItems';

@@ -26,7 +26,7 @@ const MobilePhoto = () => {
 const AboutImg = () =>{
 
     return(
-        <div className="flex justify-center items-center rounded-full laptop:hidden w-44 m-10 mb-1 profile-photo">
+        <div className="flex justify-center items-center rounded-full w-44 m-10 mb-1 profile-photo">
             <img
                 src='./aboutMeImg.jpg'
                 alt='about-Img'

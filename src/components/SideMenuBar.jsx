@@ -11,7 +11,7 @@ const Menu = ({ closeMenu, toggleTheme, themeIcon}) => {
               <CloseMenuIcon className=""/>
             </button>
             <NavItem className="flex flex-row justify-start items-center nav-bar-component-mobile" closeMenu={closeMenu}/>
-            <button onClick={toggleTheme}>
+            <button onClick={() => { toggleTheme(); closeMenu(); }}>
               {themeIcon}
             </button>
           </div>

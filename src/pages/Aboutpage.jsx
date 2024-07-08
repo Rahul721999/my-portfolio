@@ -3,11 +3,11 @@ import { AboutImg } from '../components';
 
 export default function About() {
     return (
-        <section className='h-full w-screen flex flex-col justify-center items-center transition-colors duration-300 section-container'>
-            <h1 className='text-4xl font-bold flex justify-center items-center'>About&nbsp;<span className='text-cyan'>Me</span></h1>
+        <section id="about" className=' section-container'>
+            <h1 className='text-4xl font-bold flex justify-center laptop:text-6xl items-center'>About&nbsp;<span className='text-cyan'>Me</span></h1>
             <div className='inline-block justify-center items-center'><AboutImg /></div>
             <h3 className='text-2xl font-bold gradient-text'>Software Engineer</h3>
-            <p className="text-pretty flex tablet:text-lg text-sm tablet:text-left my-5 mb-10 ">
+            <p className="text-pretty items-center flex tablet:text-lg text-sm tablet:text-left my-5 mb-10 ">
                 As a software developer,
                 I'm passionate about building robust, efficient, and scalable apps.
                 I'm an expert in Rust programming language and full-stack development,

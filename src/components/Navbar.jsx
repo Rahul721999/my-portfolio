@@ -5,6 +5,7 @@ import {MoonIcon, SunIcon, MenuIcon} from './Icons_svg.jsx';
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const themeIcon = theme === 'light' ? <MoonIcon/> : <SunIcon/>;
 
     const handleOnClick = () =>{
         setMenuOpen(!menuOpen);
@@ -15,6 +16,9 @@ const Navbar = ({ toggleTheme, theme }) => {
             <a className="text-2xl font-bold logo">Portfolio.</a>
             <nav className={`items-center hidden tablet:flex`}>
                 <NavItems />
+                <button onClick={toggleTheme} className="flex rounded mr-9">
+                    {themeIcon}
+                </button>
             </nav>
             <button className="flex tablet:hidden items-center" onClick={handleOnClick}>
                 <MenuIcon is_open={menuOpen}/>

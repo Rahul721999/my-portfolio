@@ -21,7 +21,7 @@ const Navbar = ({ toggleTheme, theme }) => {
                 </button>
             </nav>
             <button className="flex tablet:hidden items-center" onClick={handleOnClick}>
-                <MenuIcon is_open={menuOpen}/>
+                <MenuIcon/>
             </button>
             {menuOpen && <Menu closeMenu={() => setMenuOpen(false)} />}
         </header>

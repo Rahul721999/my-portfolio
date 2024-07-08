@@ -64,6 +64,13 @@ body {
   border-radius: 10px; /* rounded corners */
 }
 
+.icons{
+  transition: filter .3s;
+}
+.icons:hover{
+  filter: drop-shadow(0 0 15px #00abf0);
+}
+
 
 /* -------------------------Home page Section-------------------------*/
 .section-container {

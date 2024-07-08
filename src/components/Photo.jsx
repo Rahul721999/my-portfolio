@@ -1,9 +1,9 @@
 import React from 'react';
 const Photo = () => {
     return (
-        <div className="hidden justify-center items-center rounded-full laptop:flex profile-photo">
+        <div className="hidden justify-center items-center rounded-full laptop:flex">
             <img
-                src='\large_photo.png'
+                src='./src/assets/large_photo.png'
                 alt='desktop-profile'
                 className='rounded-full'
             />
@@ -13,9 +13,9 @@ const Photo = () => {
 
 const MobilePhoto = () => {
     return (
-        <div className="flex justify-center items-center rounded-full laptop:hidden profile-photo">
+        <div className="flex justify-center items-center rounded-full laptop:hidden">
             <img
-                src='\small_photo.png'
+                src='./src/assets/small_photo.png'
                 alt='mobile-profile'
                 className='rounded-full'
             />

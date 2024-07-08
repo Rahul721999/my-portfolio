@@ -22,4 +22,18 @@ const MobilePhoto = () => {
         </div>
     )
 }
-export { Photo, MobilePhoto };
+
+const AboutImg = () =>{
+
+    return(
+        <div className="flex justify-center items-center rounded-full laptop:hidden w-44 m-10 mb-1 profile-photo">
+            <img
+                src='./aboutMeImg.jpg'
+                alt='about-Img'
+                className='rounded-full'
+            />
+        </div>
+    )
+}
+
+export { Photo, MobilePhoto, AboutImg };

@@ -39,7 +39,7 @@ const Home = () => {
                         <MediaIcons />
                     </div>
                 </div>
-                <div className="h-full w-2/5 flex justify-center items-center"><Photo/></div>
+                <div className="w-2/5 flex justify-center items-center"><Photo/></div>
         </section>
     )
 }

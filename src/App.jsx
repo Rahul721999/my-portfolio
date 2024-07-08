@@ -1,5 +1,5 @@
 import { Navbar} from "./components";
-import {Home} from "./pages";
+import {About, Home} from "./pages";
 import React, { useState, useEffect } from "react";
 
 export default function App() {
@@ -17,6 +17,7 @@ export default function App() {
     <div>
       <Navbar toggleTheme={toggleTheme} theme={theme} />  
       <Home />
+      <About/>
     </div>
   )
 }

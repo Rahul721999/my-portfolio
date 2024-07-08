@@ -30,6 +30,7 @@ body {
 
 /* ----------------------Nav Bar component----------------------*/
 .nav-bar-component {
+  
   transition: .3s;
   opacity: 0;
   animation: slideTop .5s ease forwards;

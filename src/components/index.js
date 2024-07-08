@@ -1,5 +1,5 @@
 export {default as Menu} from './SideMenuBar';
-export {Photo, MobilePhoto} from './Photo';
+export {Photo, MobilePhoto, AboutImg} from './Photo';
 export {default as Navbar} from './Navbar';
 export {default as NavItems} from './NavItems';
 export {default as MediaIcons} from './MediaButtons';

@@ -180,6 +180,17 @@ body {
   fill: var(--text-color)
 }
 
+.profile-photo{
+  background-color: var(--bg-color);
+  border-radius: 50px;
+  transition: box-shadow 0.3s ease;
+  border: none;
+}
+.profile-photo:hover{
+  background-color: #00abf0;
+  box-shadow: 0 0 50px #00abf0;;
+}
+
 
 
 /* -----------------------------------KEYFRAME ANIMATION----------------------------------- */

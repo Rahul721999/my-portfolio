@@ -6,11 +6,11 @@ const Home = () => {
     const el = useRef(null);
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Rust Software Developer', 'Full-Stack Web Developer', 'Software Engineer', 'AI Enthusiast', 'Freelancer', 'Photographer'],
+            strings: [ 'Full-Stack Web Developer', 'Software Engineer', 'AI Enthusiast', 'Freelancer', 'Photographer', 'Rust Software Developer'],
             typeSpeed: 20,
             backSpeed: 20,
             backDelay: 1000,
-            loop: true,
+            loopCount: 2,
         });
         return () => {
             // Destroy Typed instance during cleanup to stop animation
@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <section className="h-screen w-screen flex flex-row justify-start items-center transition-colors duration-300 section-container">
                 <div className="laptop:w-3/5">
-                    <MobilePhoto/>
+                    <div className="flex justify-center items-center"><MobilePhoto/></div>
                     <h1 className="text-center tablet:text-left tablet:text-6xl text-4xl font-bold leading-tight">
                         <span className="intro-tag">Hi, I'm&nbsp;</span>
                         <span className="name-tag"> Rahul Mondal</span>
@@ -39,7 +39,7 @@ const Home = () => {
                         <MediaIcons />
                     </div>
                 </div>
-            <Photo />
+                <div className="h-full w-2/5 flex justify-center items-center"><Photo/></div>
         </section>
     )
 }

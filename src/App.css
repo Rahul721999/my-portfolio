@@ -12,13 +12,14 @@
   --text-color: #081b29;
   --gradient-color: linear-gradient(to right, var(--text-color), #98b6be);
   --animated-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  --secondary-color: #fefefe;
+  --secondary-color: #cdcdcd;
 }
 
 [data-theme='dark'] {
   --bg-color: #081b29;
   --text-color: #ededed;
   --gradient-color: linear-gradient(to right, var(--text-color), #00abf0);
+  --secondary-color: #092133;
 }
 
 body {
@@ -29,6 +30,14 @@ body {
 
 
 /* ----------------------Nav Bar component----------------------*/
+.header.sticky{
+  background: var(--bg-color);
+}
+.header nav a.active{
+  color: #00abf0;
+  text-shadow: 0 0 20px #00abf0;
+}
+
 .nav-bar-component {
   
   transition: .3s;
@@ -94,6 +103,9 @@ body {
   transition-duration: 300ms;
 }
 
+.secondary-color{
+  background: var(--secondary-color);
+}
 
 .intro-tag {
   display: inline-block;

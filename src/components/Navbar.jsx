@@ -12,7 +12,7 @@ const Navbar = ({ toggleTheme, theme }) => {
     }
 
     return (
-        <header className="fixed top-0 left-0 w-full z-50 padding-x-10p p-[20px] flex items-center justify-between bg-transparent">
+        <header className="header fixed top-0 left-0 w-full z-50 padding-x-10p p-[20px] flex items-center justify-between bg-transparent">
             <a className="text-2xl font-bold logo">Portfolio.</a>
             <nav className={`items-center hidden tablet:flex`}>
                 <NavItems />

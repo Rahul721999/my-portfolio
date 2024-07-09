@@ -13,7 +13,7 @@ const Photo = () => {
 
 const MobilePhoto = () => {
     return (
-        <div className="flex justify-center items-center rounded-full laptop:hidden profile-photo">
+        <div className="flex justify-center items-center rounded-full m-10 laptop:hidden profile-photo">
             <img
                 src='./small_photo.png'
                 alt='mobile-profile'

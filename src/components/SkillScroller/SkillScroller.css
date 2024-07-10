@@ -1,0 +1,54 @@
+:root {
+    --animation-duration: 30s;
+    --item-height: 60px;
+    --item-width: 150px;
+}
+
+.skill-scroller {
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: var(--item-height);
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 1) 20%,
+            rgba(0, 0, 0, 1) 80%,
+            rgba(0, 0, 0, 0));
+}
+
+.skill-item {
+    width: var(--item-width);
+    height: var(--item-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: max(calc(var(--item-width) * var(--total-items)), 100%);
+    animation-name: scrollleft;
+    animation-duration: var(--animation-duration);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollleft {
+    to {
+        left: calc(-1 * var(--item-width));
+    }
+}
+
+.skill-item span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #00abf0;
+    color: var(--text-color);
+}

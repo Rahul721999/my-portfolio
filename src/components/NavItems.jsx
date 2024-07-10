@@ -49,12 +49,12 @@ const NavItem = ({ closeMenu }) => {
             >
                 Service
             </a>
-            <a href="#portfolio"
-                onClick={(e) => handleClick(e, 'portfolio')}
+            <a href="#skills"
+                onClick={(e) => handleClick(e, 'skills')}
                 style={{ '--i': 4 }}
-                className={`text-lg font-medium mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component ${activeSection === 'portfolio' ? 'active' : ''}`}
+                className={`text-lg font-medium mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component ${activeSection === 'skills' ? 'active' : ''}`}
             >
-                Portfolio
+                skills
             </a>
             <a href="#contact"
                 onClick={(e) => handleClick(e, 'contact')}

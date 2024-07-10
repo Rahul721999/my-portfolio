@@ -4,3 +4,6 @@ export {default as Navbar} from './Navbar';
 export {default as NavItems} from './NavItems';
 export {default as MediaIcons} from './MediaButtons';
 export {MenuIcon, MoonIcon, SunIcon} from './Icons_svg';
+export {default as Scroller} from './SkillScroller/SkillScroller';
+
+import './SkillScroller/SkillScroller.css'

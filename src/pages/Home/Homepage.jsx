@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import { MediaIcons, MobilePhoto, Photo } from "../../components";
+import './Homepage.css';
 
 const Home = () => {
     const el = useRef(null);

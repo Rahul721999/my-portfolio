@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavItems from '../NavItems/NavItems.jsx';
 import Menu from '../SideMenuBar/SideMenuBar.jsx';
 import { MoonIcon, SunIcon, MenuIcon } from '../Icons/Icons_svg.jsx';
+import './Navbar.css';
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [menuOpen, setMenuOpen] = useState(false);

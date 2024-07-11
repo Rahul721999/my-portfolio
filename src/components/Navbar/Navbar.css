@@ -1,0 +1,60 @@
+/* ----------------------Nav Bar component----------------------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add other properties as needed */
+    z-index: 1000;
+  }
+  
+  .header{
+    background: var(--bg-color);
+  }
+  .header nav a.active{
+    color: #00abf0;
+    text-shadow: 0 0 20px #00abf0;
+  }
+  
+  .nav-bar-component {
+    
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+  }
+  .nav-bar-component-mobile {
+    transition: .3s;
+    opacity: 0;
+    animation: slideLeft .5s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+  }
+  
+  
+  .nav-bar-component:hover {
+    text-shadow: 0 0 20px #00abf0;
+  }
+  
+  /* Logo */
+  .logo {
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+  }
+  
+  .mobile-menu {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 30px rgba(0, 171, 240, 0.1);
+    border: 1px solid rgba(0, 171, 240, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  
+  .icons{
+    transition: filter .3s;
+  }
+  .icons:hover{
+    filter: drop-shadow(0 0 15px #00abf0);
+  }

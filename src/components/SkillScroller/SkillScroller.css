@@ -1,7 +1,7 @@
 :root {
     --animation-duration: 30s;
-    --item-height: 60px;
-    --item-width: 150px;
+    --item-height: 50px;
+    --item-width: 120px;
 }
 
 .skill-scroller {
@@ -10,7 +10,7 @@
     margin-inline: auto;
     position: relative;
     height: var(--item-height);
-    margin-top: 5rem;
+    margin-top: 2rem;
     overflow: hidden;
     mask-image: linear-gradient(to right,
             rgba(0, 0, 0, 0),
@@ -47,7 +47,7 @@
     height: 100%;
     border-radius: 6px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     background-color: #00abf0;
     color: var(--text-color);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const NavItem = ({ closeMenu }) => {
+const NavItems = ({ closeMenu }) => {
     const [activeSection, setActiveSec] = useState('home');
     const handleClick = (e, sectionId) => {
         e.preventDefault();
@@ -67,4 +67,4 @@ const NavItem = ({ closeMenu }) => {
     );
 };
 
-export default NavItem;
+export default NavItems;

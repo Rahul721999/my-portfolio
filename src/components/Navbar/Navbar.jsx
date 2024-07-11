@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import NavItems from './NavItems';
-import Menu from './SideMenuBar.jsx';
-import {MoonIcon, SunIcon, MenuIcon} from './Icons_svg.jsx';
+import NavItems from '../NavItems/NavItems.jsx';
+import Menu from '../SideMenuBar/SideMenuBar.jsx';
+import { MoonIcon, SunIcon, MenuIcon } from '../Icons/Icons_svg.jsx';
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const themeIcon = theme === 'light' ? <MoonIcon/> : <SunIcon/>;
+    const themeIcon = theme === 'light' ? <MoonIcon /> : <SunIcon />;
 
-    const handleOnClick = () =>{
+    const handleOnClick = () => {
         setMenuOpen(!menuOpen);
     }
 
@@ -21,7 +21,7 @@ const Navbar = ({ toggleTheme, theme }) => {
                 </button>
             </nav>
             <button className="flex tablet:hidden items-center" onClick={handleOnClick}>
-                <MenuIcon/>
+                <MenuIcon />
             </button>
             {menuOpen && <Menu themeIcon={themeIcon} toggleTheme={toggleTheme} closeMenu={() => setMenuOpen(false)} />}
         </header>

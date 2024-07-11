@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from "react";
 import { Navbar} from "./components";
 import {About, Contact, Home, Service, Skills} from "./pages";
-import React, { useState, useEffect } from "react";
 
 export default function App() {
   const [theme, setTheme] = useState('dark');

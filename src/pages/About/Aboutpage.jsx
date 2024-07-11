@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutImg } from '../components';
+import { AboutImg } from '../../components';
 
 export default function About() {
     return (

@@ -29,3 +29,17 @@ export default function Scroller() {
         </div>
     );
 }
+
+
+const IconScroller = () =>{
+    const skills = [
+
+        
+    ]
+
+    return(
+        <duv>
+
+        </duv>
+    )
+}

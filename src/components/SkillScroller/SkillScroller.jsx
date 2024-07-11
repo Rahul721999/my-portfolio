@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './SkillScroller.css';
 
 export default function Scroller() {
-    const skills = ['HTML', 'CSS', 'TailWind', 'BootStrap', 'JS', 'Node', 'Express', 'MongoDB', 'PostgreSQL', 'RUST', 'Actix', 'WARP', 'AXUM','Python', 'TensorFlow', 'WebSocket', 'JWT', 'Hashing', 'Encryption', 'Asym-Crypto','Git', 'GitHub', 'GitLab', 'BitBucket', 'Docker', 'Kubernetes', 'Okteto', 'Ingress', 'Linux', 'Solana', 'gRPC', 'MicroService'];
+    const skills = ['HTML', 'CSS', 'TailWind', 'BootStrap', 'JS', 'NodeJs', 'ExpressJs', 'VueJs', 'VanillaJs','ReactJs', 'NextJs', 'MongoDB', 'PostgreSQL', 'RUST', 'Actix.rs', 'WARP.rs', 'AXUM.rs','Python', 'TensorFlow.py', 'WebSocket', 'JWT', 'Hashing', 'Encryption', 'Asym-Crypto','Git', 'GitHub', 'GitLab', 'BitBucket', 'Docker', 'Kubernetes', 'Okteto', 'Ingress', 'Linux', 'Solana', 'gRPC', 'MicroService', 'AI', 'ML', 'DL', 'CNN', 'LLM'];
 
     const totalItems = skills.length;
 

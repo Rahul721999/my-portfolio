@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import './SkillScroller.css';
 
-export default function Scroller({ skills }) {
+export default function Scroller() {
+    const skills = ['HTML', 'CSS', 'TailWind', 'BootStrap', 'JS', 'Node', 'Express', 'MongoDB', 'PostgreSQL', 'RUST', 'Actix', 'WARP', 'AXUM','Python', 'TensorFlow', 'WebSocket', 'JWT', 'Hashing', 'Encryption', 'Asym-Crypto','Git', 'GitHub', 'GitLab', 'BitBucket', 'Docker', 'Kubernetes', 'Okteto', 'Ingress', 'Linux', 'Solana', 'gRPC', 'MicroService'];
+
     const totalItems = skills.length;
 
     // set the total no of items in css

@@ -11,6 +11,7 @@
 }
 
 .contact-form .input-box {
+    position: relative;
     background: transparent;
     display: flex;
     flex-direction: column; /* Default to column for smaller screens */
@@ -19,6 +20,8 @@
 }
 
 .contact-form .input-box .input-field {
+    position: relative;
+
     width: 100%; /* Full width for smaller screens */
     margin-bottom: 1rem;
     height: 50px;
@@ -68,4 +71,24 @@
 
 .contact-form .textarea-field textarea {
     resize: none;
+}
+
+.contact-form .selected-field{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--secondary-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .3s;
+}
+
+
+.contact-form .input-box .input-field input:focus ~ .selected-field,
+.contact-form .input-box .input-field input:valid ~ .selected-field,
+textarea:focus ~ .selected-field,
+textarea:valid ~ .selected-field {
+    width: 100%;
 }

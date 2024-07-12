@@ -10,21 +10,21 @@ export default function Contact() {
             <form className='contact-form'>
                 <div className='input-box'>
                     <div className='input-field'>
-                        <input className='input-tag' type='text' placeholder='Full Name' required/>
+                        <input type='text' placeholder='Full Name' required/>
                         <span className='selected-field'></span>
                     </div>
                     <div className='input-field'>
-                        <input className='input-tag' type='text' placeholder='Email address' required/>
+                        <input type='email' placeholder='Email address' required/>
                         <span className='selected-field'></span>
                     </div>
                 </div>
                 <div className='input-box'>
                     <div className='input-field'>
-                        <input className='input-tag' type='number' placeholder='Mobile number' required/>
+                        <input type='number' placeholder='Mobile number' required/>
                         <span className='selected-field'></span>
                     </div>
                     <div className='input-field'>
-                        <input className='input-tag' type='text' placeholder='Email Subject' required/>
+                        <input type='text' placeholder='Email Subject' required/>
                         <span className='selected-field'></span>
                     </div>
                 </div>

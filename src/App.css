@@ -13,6 +13,7 @@
   --gradient-color: linear-gradient(to right, var(--text-color), #98b6be);
   --animated-gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   --secondary-color: #cdcdcd;
+  --main-color: #00abf0;
 }
 
 [data-theme='dark'] {

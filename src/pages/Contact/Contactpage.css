@@ -51,6 +51,7 @@
     width: 100%;
     height: 100%;
     padding: 1rem;
+    font-size: .875rem;
     color: var(--text-color);
     background: transparent;
     border-radius: 0.4rem;
@@ -91,4 +92,10 @@
 textarea:focus ~ .selected-field,
 textarea:valid ~ .selected-field {
     width: 100%;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

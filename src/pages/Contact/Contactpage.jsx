@@ -1,13 +1,11 @@
 import React from 'react';
 import './Contactpage.css';
-
+import Swal from 'sweetalert2';
 
 export default function Contact() {
-    const [result, setResult] = React.useState("");
     const secret_key = import.meta.env.VITE_SECRET_KEY;
     const onSubmit = async (event) => {
         event.preventDefault();
-        setResult("Sending....");
         
         const formData = new FormData(event.target);
         formData.append("access_key",secret_key);
@@ -19,13 +17,20 @@ export default function Contact() {
         const data = await response.json();
 
         if (data.success) {
-            setResult("Form Submitted Successfully");
+            Swal.fire({
+                title: "Success!",
+                text: "Form Submitted Successfully",
+                icon: "success"
+              });
             event.target.reset();
         } else {
             console.log("Error", data);
-            setResult(data.message);
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Something Went Wrong!",
+              });
         }
-        console.log(result);
     };
 
     return (
@@ -58,7 +63,7 @@ export default function Contact() {
                     <span className='selected-field'></span>
                 </div>
                 <div className="w-full h-12 flex justify-center">
-                    <button href="#" type="submit" className="inline-flex justify-center items-center w-36 h-full text-lg rounded-lg border-solid font-bold tracking-widest relative overflow-hidden z-1 border-2 border-cyan bg-cyan text-dark-theme cursor-pointer hire-me-btn">Submit</button>
+                    <button href="#" type="submit" className="btn-type1">Submit</button>
                 </div>
             </form>
         </section>

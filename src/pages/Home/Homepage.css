@@ -54,51 +54,6 @@
     animation-delay: .3s;
   }
   
-  /* Hire me button from Home page*/
-  .hire-me-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -1;
-    transition: .5s;
-  }
-  
-  .hire-me-btn:hover::before {
-    width: 100%;
-  }
-  
-  .hire-me-btn:hover {
-    color: var(--text-color);
-    box-shadow: 0 0 30px #00abf0;
-  }
-  
-  /* Hire me button from Home page*/
-  .lets-talk-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--text-color);
-    z-index: -1;
-    transition: .5s;
-  }
-  
-  .lets-talk-btn:hover::before {
-    width: 100%;
-  }
-  
-  .lets-talk-btn:hover {
-    color: var(--bg-color);
-    border: none;
-    box-shadow: 0 0 30px #00abf0;
-  }
-  
   
   /* -----------------------------Social media logos-----------------------------*/
   .btn-container {

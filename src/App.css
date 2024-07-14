@@ -29,6 +29,96 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hire me button from Home page*/
+.btn-type1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 100%;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-width: 2px;
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-type1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--bg-color);
+  z-index: -1;
+  transition: .5s;
+}
+.btn-type1:hover::before {
+  width: 100%;
+}
+.btn-type1:hover {
+  color: var(--text-color);
+  box-shadow: 0 0 30px #00abf0;
+}
+
+.btn-type1:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Hire me button from Home page*/
+.btn-type2{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 100%;
+  font-size: 1.125rem;
+  border-radius: 0.5rem;
+  border-style: solid;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-width: 2px;
+  border-color: var(--main-color);
+  background-color: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-type2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-color);
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-type2:hover::before {
+  width: 100%;
+}
+
+.btn-type2:hover {
+  color: var(--bg-color);
+  border: none;
+  box-shadow: 0 0 30px #00abf0;
+}
+
 
 /* -----------------------------------KEYFRAME ANIMATION----------------------------------- */
 

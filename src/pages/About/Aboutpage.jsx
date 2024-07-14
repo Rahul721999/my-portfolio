@@ -16,7 +16,7 @@ export default function About() {
                 and collaborate to create innovative solutions that make a positive impact.
             </p>
             <div className="w-full h-12 flex justify-center">
-                <a href="#" className="inline-flex justify-center items-center w-36 h-full text-lg rounded-lg border-solid font-bold tracking-widest relative overflow-hidden z-1 border-2 border-cyan bg-cyan text-dark-theme hire-me-btn">Read More</a>
+                <a href="#" className="btn-type1">Read More</a>
             </div>
         </section>
     )

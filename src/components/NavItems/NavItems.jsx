@@ -54,7 +54,7 @@ const NavItems = ({ closeMenu }) => {
                 style={{ '--i': 4 }}
                 className={`text-lg font-medium mr-9 transition-colors duration-300 hover:text-cyan nav-bar-component ${activeSection === 'skills' ? 'active' : ''}`}
             >
-                skills
+                Skills
             </a>
             <a href="#contact"
                 onClick={(e) => handleClick(e, 'contact')}

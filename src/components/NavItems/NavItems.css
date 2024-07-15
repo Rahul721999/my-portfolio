@@ -1,0 +1,15 @@
+.nav-bar-component {
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+}
+
+.nav-bar-component:hover {
+    text-shadow: 0 0 20px #00abf0;
+}
+
+.active {
+    color: #00abf0;
+    text-shadow: 0 0 20px #00abf0;
+}

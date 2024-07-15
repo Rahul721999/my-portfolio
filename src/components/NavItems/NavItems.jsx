@@ -1,31 +1,16 @@
 import React, { useEffect, useState } from "react";
-const NavItems = ({ closeMenu }) => {
-    const [activeSection, setActiveSec] = useState('home');
+import './NavItems.css';
+
+
+
+const NavItems = ({ closeMenu, activeSection, setActiveSec  }) => {
     const handleClick = (e, sectionId) => {
         e.preventDefault();
         document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
         setActiveSec(sectionId);
         if (closeMenu) closeMenu();
     };
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.offsetHeight;
-                const sectionId = section.getAttribute('id');
-                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                    setActiveSec(sectionId);
-                }
-            })
-        }
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-
-    }, []);
+    
     return (
         <>
             <a href="#home"

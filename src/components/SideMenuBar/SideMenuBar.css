@@ -1,0 +1,36 @@
+/* Logo */
+.logo {
+  cursor: default;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.mobile-menu {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 171, 240, 0.1);
+  border: 1px solid rgba(0, 171, 240, 0.3);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.nav-bar-component-mobile .nav-bar-component {
+  transition: .3s;
+  opacity: 0;
+  animation: slideLeft .5s ease forwards;
+  animation-delay: calc(.2s* var(--i));
+}
+
+.nav-bar-component-mobile .nav-bar-component.active {
+  color: #00abf0;
+  text-shadow: 0 0 20px #00abf0;
+}
+
+.icons {
+  transition: filter .3s;
+}
+
+.icons:hover {
+  filter: drop-shadow(0 0 15px #00abf0);
+}

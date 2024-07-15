@@ -60,11 +60,10 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     background-color: transparent;
-    /* bottom: 100px; */
-    padding-top: 50px;
-    width: 175px;
+    height: 100px;
+    width: 300px;
     position:absolute;
   }
   
@@ -73,7 +72,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0;
+    margin-right: 10px;
     padding: 0.1rem;
     height: 40px;
     width: 40px;
@@ -85,7 +84,7 @@
   
   .social-link:hover {
     background-color: #00abf0;
-    box-shadow: 0 0 20px #00abf0;
+    box-shadow: 0 0 15px #00abf0;
   }
   
   /* Image styling */

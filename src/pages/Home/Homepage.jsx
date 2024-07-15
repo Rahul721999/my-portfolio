@@ -1,23 +1,10 @@
 import { useRef, useEffect } from "react";
-import Typed from "typed.js";
-import { MediaIcons, MobilePhoto, Photo } from "../../components";
+import { MediaIcons, MobilePhoto, Photo, useTypedEffect } from "../../components";
 import './Homepage.css';
 
 const Home = () => {
     const el = useRef(null);
-    useEffect(() => {
-        const typed = new Typed(el.current, {
-            strings: [ 'Full-Stack Web Developer', 'Software Engineer', 'AI Enthusiast', 'Freelancer', 'Photographer', 'Rust Software Developer'],
-            typeSpeed: 20,
-            backSpeed: 20,
-            backDelay: 1000,
-            loopCount: 2,
-        });
-        return () => {
-            // Destroy Typed instance during cleanup to stop animation
-            typed.destroy();
-        };
-    }, []);
+    useTypedEffect(el);
     return (
         <section id="home" className="flex flex-row justify-start items-center section-container">
                 <div className="laptop:w-3/5">

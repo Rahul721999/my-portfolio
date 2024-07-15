@@ -5,17 +5,18 @@ const useTypedEffect = (el) => {
     useEffect(() => {
         const typed = new Typed(el.current, {
             strings: [
-                'Full-Stack Web Developer',
-                'Software Engineer',
-                'AI Enthusiast',
                 'Freelancer',
-                'Photographer',
+                'AI Enthusiast',
+                'Software Engineer',
+                'Full-Stack Web Developer',
                 'Rust Software Developer'
             ],
             typeSpeed: 20,
             backSpeed: 20,
             backDelay: 1000,
             loopCount: 2,
+            smartBackspace: true,
+            onComplete: (self) => {self.cursor.style.display = 'none'},
         });
 
         return () => {

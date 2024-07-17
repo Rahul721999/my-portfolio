@@ -1,0 +1,6 @@
+{
+    "Frontend" : ["HTML", "CSS", "JS", "ReactJs", "NodeJs","TS", "Yew.rs"],
+    "Backend" : ["Rust", "Actix.rs", "Axum.rs"],
+    "Database" : ["MongoDb", "PostgreSQL"],
+    "DevOps" : ["Docker", "Kubernetes", "D.Ocean"] 
+}

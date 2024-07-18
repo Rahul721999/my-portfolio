@@ -3,8 +3,3 @@
     overflow: scroll;
     padding: .5rem;
 }
-
-::-webkit-scrollbar{
-    width: 0px;
-    height: 0px;
-}

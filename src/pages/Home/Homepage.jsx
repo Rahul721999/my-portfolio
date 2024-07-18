@@ -21,7 +21,7 @@ const Home = () => {
                     to craft cutting-edge solutions and contribute to transformative projects
                 </p>
                 <div className="w-80 h-12 flex justify-between">
-                    <a href="#" className="btn-type1">Hire Me</a>
+                    <a href="#" download={'./RahulMondal_resume.pdf'} className="btn-type1" >Hire Me!</a>
                     <a href="#" className="btn-type2" onClick={(e) => handleScrollToSection(e, 'contact')}>Let's Talk</a>
                 </div>
                 <div className="btn-container">

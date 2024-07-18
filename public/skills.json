@@ -1,6 +1,68 @@
 {
-    "Frontend" : ["HTML", "CSS", "JS", "ReactJs", "NodeJs","TS", "Yew.rs"],
-    "Backend" : ["Rust", "Actix.rs", "Axum.rs"],
-    "Database" : ["MongoDb", "PostgreSQL"],
-    "DevOps" : ["Docker", "Kubernetes", "D.Ocean"] 
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        "HTML",
+        "CSS",
+        "JS",
+        "ReactJs",
+        "NodeJs",
+        "TS",
+        "Yew.rs"
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        "Rust",
+        "Actix.rs",
+        "Axum.rs",
+        "NodeJs",
+        "ExpressJs"
+      ]
+    },
+    {
+      "category": "Technologies",
+      "items": [
+        "Websocket",
+        "gRPC",
+        "JWT",
+        "Hashing",
+        "Cryptography",
+        "Asym-Crypto.",
+        "A.I.",
+        "M.L.",
+        "D.L.",
+        "C.N.N.",
+        "L.L.M."
+      ]
+    },
+    {
+      "category": "Database",
+      "items": [
+        "MongoDb",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "category": "DevOps",
+      "items": [
+        "Docker",
+        "Kubernetes",
+        "D.Ocean",
+        "Okteto"
+      ]
+    },
+    {
+      "category": "DevTools",
+      "items": [
+        "Git",
+        "GitHub",
+        "GitLab",
+        "BitBucket",
+        "JiraBoard"
+      ]
+    }
+  ]
 }

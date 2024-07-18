@@ -1,59 +1,41 @@
 .skill-cards {
-    position: relative;
-    margin: 10px;
-    border-radius: 15px;
-    overflow: visible;
-    padding: 1rem;
-    background: var(--bg-color); 
-    box-shadow: 4px 4px 10px var(--main-color);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    transition: all 0.3s ease-in-out; 
-  }
-  
-  .skill-cards:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
-  }
-  
+  position: relative;
+  margin: 10px;
+  border-radius: 15px;
+  overflow: visible;
+  padding: 1rem;
+  border: 2px solid var(--main-color);
+}
 
-  .card-title {
-    position: relative;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
-  }
+.skill-cards:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
 
-  .card-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    background: linear-gradient(to right, transparent, var(--text-color), transparent);
-  }
+
+.card-title {
+  position: relative;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.card-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--text-color), transparent);
+}
 
 .languages {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-    display: grid;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  display: grid;
 
-    /* Adjust the gap between the items as needed */
 }
-/* 
-@media screen and (min-width: 768px) {
-    .languages {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .languages {
-        grid-template-columns: repeat(2, 1fr);
-    }
-} */

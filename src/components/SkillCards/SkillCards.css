@@ -1,10 +1,10 @@
 .skill-cards {
-  position: relative;
   margin: 10px;
   border-radius: 15px;
   overflow: visible;
   padding: 1rem;
   border: 2px solid var(--main-color);
+  background: var(--bg-color);
 }
 
 .skill-cards:hover {
@@ -28,7 +28,7 @@
   right: 0;
   bottom: 0;
   height: 2px;
-  background: linear-gradient(to right, transparent, var(--text-color), transparent);
+  background: linear-gradient(to right, var(--bg-color), var(--text-color), transparent);
 }
 
 .languages {

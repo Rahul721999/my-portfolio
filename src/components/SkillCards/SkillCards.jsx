@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './SkillCards.css';
-
 export default function SkillCards({title, skillArr}) {
   return (
-    <div className='flex flex-col w-[250px] h-3/4  skill-cards rounded-lg p-6'>
+    <div className='flex flex-col w-[200px] laptop:w-[550px] h-[450px] skill-cards rounded-lg p-6'>
       <div className='text-[var(--text-color)] flex items-center justify-center text-xl card-title mb-4'>{title}</div>
       <div className='languages'>
         {

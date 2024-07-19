@@ -1,4 +1,6 @@
 import React from 'react';
+import './Photo.css'
+
 const Photo = () => {
     return (
         <div className="hidden justify-center items-center rounded-full laptop:flex profile-photo">
@@ -26,12 +28,13 @@ const MobilePhoto = () => {
 const AboutImg = () =>{
 
     return(
-        <div className="flex justify-center items-center rounded-full w-44 m-10 mb-1 profile-photo">
+        <div className="inline-block justify-center items-center about-img-container relative">
             <img
                 src='./aboutMeImg.jpg'
                 alt='about-Img'
-                className='rounded-full'
+                className='about-img justify-center items-center'
             />
+            <span className='circle-spin'></span>
         </div>
     )
 }

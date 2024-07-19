@@ -36,10 +36,21 @@
   padding-right: 1.5rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   overflow: scroll;
 
 }
+
+@media (min-width: 1280px){
+  .laptop\:grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(90px, 1fr));
+    gap: 0.5rem;
+  }
+}
+
+
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;

@@ -24,6 +24,7 @@
     {
       "category": "Technologies",
       "items": [
+        "REST-API",
         "Websocket",
         "gRPC",
         "JWT",
@@ -31,7 +32,10 @@
         "Cryptography",
         "Asym-Crypto.",
         "Web3",
-        "A.I."
+        "A.I.",
+        "M.L.",
+        "D.L.",
+        "L.L.M."
       ]
     },
     {
@@ -46,8 +50,10 @@
       "items": [
         "Docker",
         "Kubernetes",
+        "Okteto",
+        "Ingress",
         "D.Ocean",
-        "Okteto"
+        "GitHub-Pages"
       ]
     },
     {
@@ -57,6 +63,7 @@
         "GitHub",
         "GitLab",
         "BitBucket",
+        "Postman",
         "JiraBoard"
       ]
     }

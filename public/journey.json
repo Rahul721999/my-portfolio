@@ -1,0 +1,36 @@
+{
+    "education" : [
+        {
+            "degree": "B.TECH.",
+            "org" : "Future Institute Of Technology",
+            "date" : "2017-2021"
+        },
+        {
+            "degree": "Higher Secondary(class-XII)",
+            "org" : "Sonarpur Siksha Sadan",
+            "date" : "2015-2017"
+        },
+        {
+            "degree": "Secondary(class-X)",
+            "org" : "Harinavi High School",
+            "date" : "2014-2015"
+        }
+    ],
+    "experience" : [
+        {
+            "designation": "Software Engineer",
+            "org" : "GS-Labs",
+            "date" : "Oct.2022-March.2023"
+        },
+        {
+            "designation": "Software Developer",
+            "org" : "Rapid Innovation",
+            "date" : "2021-Sept.2022"
+        },
+        {
+            "designation": "Full-Stack Web Developer",
+            "org" : "Freelance",
+            "date" : "2021"
+        }
+    ]
+}

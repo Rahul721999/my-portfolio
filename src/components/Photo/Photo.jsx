@@ -15,20 +15,21 @@ const Photo = () => {
 
 const MobilePhoto = () => {
     return (
-        <div className="flex justify-center items-center rounded-full laptop:hidden profile-photo">
+        <div className="justify-center items-center about-img-container laptop:hidden relative">
             <img
                 src='./small_photo.png'
                 alt='mobile-profile'
-                className='rounded-full'
+                className='about-img justify-center items-center'
             />
+            <span className='circle-spin'></span>
         </div>
     )
 }
 
-const AboutImg = () =>{
+const AboutImg = () => {
 
-    return(
-        <div className="inline-block justify-center items-center about-img-container relative">
+    return (
+        <div className="justify-center items-center about-img-container relative">
             <img
                 src='./aboutMeImg.jpg'
                 alt='about-Img'

@@ -1,4 +1,5 @@
-.exp-card{
+.exp-card, .edu-card{
+    height: 150px;
     padding-left: 5px;
     padding: 2px;
     padding-top: 15px;
@@ -7,10 +8,11 @@
     margin-bottom: 2rem;
 }
 
-.exp-card::before{
+/* Blue Dot */
+.exp-card::before, .edu-card::after{
     content: '';
     position: absolute;
-    top: 0;
+    top: -0.2rem;
     left: -2.7rem;
     width: 15px;
     height: 15px;

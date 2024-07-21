@@ -40,17 +40,16 @@ export default function About() {
 
 function ReadMore({ showMore }) {
 
-
     return (
         <section id="about" className='section-container secondary-color'>
             <h1 className='text-4xl font-bold flex justify-center laptop:text-6xl items-center mb-12'>My&nbsp;<span className='text-cyan'>Journey</span></h1>
 
             {/* My Journey container */}
-            <div className='journey-container flex laptop:flex-col w-[80%] h-[70%] overflow-scroll'>
+            <div className='journey-container flex laptop:flex-col w-[80%] h-[70%] overflow-scroll pl-2'>
                 {/* Education section */}
-                <div className='flex flex-col tablet:justify-start w-full laptop:w-[50%] order-2 laptop:order-1'>
+                <div className='flex flex-col tablet:justify-start w-full laptop:w-[50%] order-2 laptop:order-1 h-full pb-10'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Education</h2>
-                    <div className='education-box overflow-scroll'>
+                    <div className='education-box'>
                         <EducationCard />
                         <EducationCard />
                         <EducationCard />
@@ -58,9 +57,9 @@ function ReadMore({ showMore }) {
                 </div>
 
                 {/* Exprerience section */}
-                <div className='flex flex-col laptop:w-[50%] order-1 laptop:order-2'>
+                <div className='flex flex-col laptop:w-[50%] order-1 laptop:order-2 h-full'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Experience</h2>
-                    <div className='experience-box overflow-scroll'>
+                    <div className='experience-box'>
                         <Expcard />
                         <Expcard />
                         <Expcard />

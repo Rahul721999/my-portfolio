@@ -2,11 +2,11 @@ import React from 'react';
 import './Expcard.css';
 
 
-const EducationCard = () =>{
-    const course = "B. Tech";
-    const org = "Future Institute of Technology";
-    const date = "2023-2024";
-    const field = "Computer Science & Engineering"
+const EducationCard = ({ education }) => {
+    const course = education?.degree || "Unknown Degree";
+    const org = education?.org || "Unknown Organization";
+    const date = education?.date || "Unknown Date";
+    const field = education?.field || "Unknown Field";
     return (
         <div className="edu-card relative tablet:w-[90%] bg-[--bg-color]">
             <div className='Card-Heading pl-3 laptop:flex-row'>
@@ -22,10 +22,11 @@ const EducationCard = () =>{
 }
 
 
-const Expcard = () => {
-    const designation = "Software Developer";
-    const org = "GS-Lab";
-    const date = "2023-2024";
+const Expcard = ({ experience }) => {
+    const designation = experience?.designation || "Unknown Designation";
+    const org = experience?.org || "Unknown Organization";
+    const date = experience?.date || "Unknown Date";
+    const body = experience?.body || ["Unknown body1", "Unknown body2"];
     return (
         <div className="exp-card relative tablet:w-[90%] bg-[--bg-color]">
             <div className='Card-Heading pl-3 laptop:flex-row'>
@@ -33,11 +34,12 @@ const Expcard = () => {
                 <h3 className='Date text-xs relative text-[var(--main-color)]'>{date}</h3>
             </div>
             <div className='Card-body m-3'>
-                <p className='text-xs tablet:text-sm'>– {"Engineered a Chat-Application UI with Yew.rs & backend with Axum.rs."}</p>
-                <p className='text-xs tablet:text-sm'>– {"Created, deployed & managed microservices with Kubernetes."}</p>
+                {body.map((e, index) => (
+                    <p key={index} className='text-xs tablet:text-sm'>– {e}</p>
+                ))}
             </div>
         </div>
     )
 }
 
-export {Expcard, EducationCard}
+export { Expcard, EducationCard }

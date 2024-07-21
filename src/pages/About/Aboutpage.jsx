@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AboutImg, Expcard, EducationCard } from '../../components';
 import './Aboutpage.css';
 
@@ -39,6 +39,23 @@ export default function About() {
 
 
 function ReadMore({ showMore }) {
+    const [education, setEducation] = useState([]);
+    const [experience, setExperience] = useState([]);
+    useEffect(() => {
+        fetch('./journey.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new console.error('Failed to fetch journey history');
+                } return response.json();
+            })
+            .then(data => {
+                setEducation(data.education);
+                setExperience(data.experience);
+            })
+            .catch(error => {
+                console.error("There was a problem: ", error);
+            })
+    }, []);
 
     return (
         <section id="about" className='section-container secondary-color'>
@@ -47,22 +64,22 @@ function ReadMore({ showMore }) {
             {/* My Journey container */}
             <div className='journey-container flex laptop:flex-col w-[80%] h-[70%] overflow-scroll pl-2'>
                 {/* Education section */}
-                <div className='flex flex-col tablet:justify-start w-full laptop:w-[50%] order-2 laptop:order-1 h-full pb-10'>
+                <div className='flex flex-col tablet:justify-start w-full tablet:w-[50%] order-2 laptop:order-1 h-full pb-10'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Education</h2>
                     <div className='education-box'>
-                        <EducationCard />
-                        <EducationCard />
-                        <EducationCard />
+                        {education.map((e, index) => (
+                            <EducationCard key={index} education={e} />
+                        ))}
                     </div>
                 </div>
 
                 {/* Exprerience section */}
-                <div className='flex flex-col laptop:w-[50%] order-1 laptop:order-2 h-full'>
+                <div className='flex flex-col laptop:w-[50%] order-1 tablet:order-2 h-full'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Experience</h2>
                     <div className='experience-box'>
-                        <Expcard />
-                        <Expcard />
-                        <Expcard />
+                        {experience.map((e, index) => (
+                            <Expcard key={index} experience={e} />
+                        ))}
                     </div>
                 </div>
             </div>

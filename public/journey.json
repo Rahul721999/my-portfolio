@@ -1,36 +1,43 @@
 {
-    "education" : [
+    "education": [
         {
             "degree": "B.TECH.",
-            "org" : "Future Institute Of Technology",
-            "date" : "2017-2021"
+            "org": "Future Institute Of Technology",
+            "date": "2017-2021",
+            "field": "Computer Science & Eng."
         },
         {
             "degree": "Higher Secondary(class-XII)",
-            "org" : "Sonarpur Siksha Sadan",
-            "date" : "2015-2017"
+            "org": "Sonarpur Siksha Sadan",
+            "date": "2015-2017",
+            "field": "Pure-Science"
         },
         {
             "degree": "Secondary(class-X)",
-            "org" : "Harinavi High School",
-            "date" : "2014-2015"
+            "org": "Harinavi High School",
+            "date": "2014-2015",
+            "field": "N.A."
         }
     ],
-    "experience" : [
+    "experience": [
         {
             "designation": "Software Engineer",
-            "org" : "GS-Labs",
-            "date" : "Oct.2022-March.2023"
+            "org": "GS-Labs",
+            "date": "Oct.2022-March.2023",
+            "body": [
+                "Engineered a Chat-Application UI with Yew.rs & backend with Axum.rs.",
+                "Created, deployed & managed microservices with Kubernetes."
+            ]
         },
         {
             "designation": "Software Developer",
-            "org" : "Rapid Innovation",
-            "date" : "2021-Sept.2022"
+            "org": "Rapid Innovation",
+            "date": "2021-Sept.2022"
         },
         {
             "designation": "Full-Stack Web Developer",
-            "org" : "Freelance",
-            "date" : "2021"
+            "org": "Freelance",
+            "date": "2021"
         }
     ]
 }

@@ -1,0 +1,56 @@
+{
+    "education": [
+        {
+            "degree": "Bachelor in Technology",
+            "org": "Future Institute Of Technology",
+            "date": "2017-2021",
+            "field": "Computer Science & Eng.",
+            "cgpa" : "7.46"
+        },
+        {
+            "degree": "Higher Secondary(class-XII)",
+            "org": "Sonarpur Sikhsha Sadan",
+            "date": "2015-2017",
+            "field": "Science",
+            "cgpa" : "60%"
+        },
+        {
+            "degree": "Secondary(class-X)",
+            "org": "Harinavi D. V. A. S. High School",
+            "date": "2014-2015",
+            "field": "All Subject",
+            "cgpa" : "72.5%"
+        }
+    ],
+    "experience": [
+        {
+            "designation": "Software Engineer",
+            "org": "GS-Labs",
+            "date": "Oct.2022-Mar.2023",
+            "body": [
+                "Single-handedly developed and deployed a chat application widget for a European tech support website",
+                "Created, deployed & managed various microservices with Kubernetes.",
+                "Added comprehensive test cases to streamline the testing process and ensure smoother deployments"
+            ]
+        },
+        {
+            "designation": "Software Developer",
+            "org": "Rapid Innovation",
+            "date": "Mar.2021-Sept.2022",
+            "body": [
+                "Developed a desktop app to monitor remote employees, boosting productivity by 25% and profits by 15%.",
+                "Worked with cross-functional teams to optimize app performance and engaged in daily code reviews"
+            ]
+        },
+        {
+            "designation": "Full-Stack Web Developer",
+            "org": "Freelance",
+            "date": "Mar.2024",
+            "body":[
+                "Designed and implemented a comprehensive exchange system within an exchange app from start to finish",
+                "Leveraged WebSockets to streamline and optimize the exchange process for efficiency single handedly.",
+                "Implemented a publish-subscriber model in the WebSocket, making the exchange process 10% faster."
+            ]
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 export {default as SideMenu} from './SideMenuBar/SideMenuBar.jsx';
-export {Photo, MobilePhoto, AboutImg} from './Photo/Photo.jsx';
+export {Photo, AboutImg} from './Photo/Photo.jsx';
 export {default as Navbar} from './Navbar/Navbar.jsx';
 export {default as NavItems} from './NavItems/NavItems.jsx';
 export {default as MediaIcons} from './MediaButton/MediaButtons.jsx';

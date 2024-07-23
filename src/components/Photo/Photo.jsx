@@ -3,25 +3,12 @@ import './Photo.css'
 
 const Photo = () => {
     return (
-        <div className="hidden justify-center items-center rounded-full laptop:flex profile-photo">
+        <div className="justify-center items-center rounded-full profile-photo w-40 laptop:w-fit">
             <img
-                src='./large_photo.png'
+                src='./profile_photo.png'
                 alt='desktop-profile'
                 className='rounded-full'
             />
-        </div>
-    )
-}
-
-const MobilePhoto = () => {
-    return (
-        <div className="justify-center items-center about-img-container laptop:hidden relative">
-            <img
-                src='./small_photo.png'
-                alt='mobile-profile'
-                className='about-img justify-center items-center'
-            />
-            <span className='circle-spin'></span>
         </div>
     )
 }

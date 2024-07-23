@@ -27,4 +27,4 @@ const AboutImg = () => {
     )
 }
 
-export { Photo, MobilePhoto, AboutImg };
+export { Photo, AboutImg };

@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { MediaIcons, MobilePhoto, Photo, useTypedEffect } from "../../components";
+import { MediaIcons, Photo, useTypedEffect } from "../../components";
 import './Homepage.css';
 import { handleScrollToSection } from "../../script";
 

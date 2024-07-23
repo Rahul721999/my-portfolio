@@ -3,7 +3,7 @@ import './Photo.css'
 
 const Photo = () => {
     return (
-        <div className="justify-center items-center rounded-full profile-photo w-40 laptop:w-fit">
+        <div className="justify-center items-center rounded-full profile-photo w-40 tablet:w-fit">
             <img
                 src='./profile_photo.png'
                 alt='desktop-profile'

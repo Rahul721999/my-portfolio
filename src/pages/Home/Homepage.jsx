@@ -8,8 +8,8 @@ const Home = () => {
     useTypedEffect(el);
     return (
         <section id="home" className="flex flex-col laptop:flex-row justify-start items-center section-container">
-            <div className="laptop:w-3/5 order-2 laptop:order-1">
-                <h1 className="text-center tablet:text-left tablet:text-5xl text-2xl font-bold leading-tight flex">
+            <div className="tablet:w-3/5 order-2 laptop:order-1">
+                <h1 className="text-center tablet:text-left text-3xl tablet:text-5xl font-bold leading-tight flex">
                     <span className="intro-tag">Hi, I'm&nbsp;</span>
                     <span className="name-tag"> Rahul Mondal</span>
                 </h1>

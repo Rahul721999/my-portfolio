@@ -64,7 +64,7 @@ function ReadMore({ showMore }) {
             {/* My Journey container */}
             <div className='journey-container flex tablet:flex-col w-[100%] tablet:w-[90%] laptop:w-[80%] h-[70%] overflow-scroll pl-2'>
                 {/* Education section */}
-                <div className='flex flex-col tablet:justify-start w-full tablet:w-[50%] order-2 tablet:order-1 h-full pb-5'>
+                <div className='flex flex-col w-full tablet:w-[50%] order-2 tablet:order-1 h-auto pb-5'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Education</h2>
                     <div className='education-box'>
                         {education.map((e, index) => (
@@ -74,7 +74,7 @@ function ReadMore({ showMore }) {
                 </div>
 
                 {/* Exprerience section */}
-                <div className='flex flex-col tablet:w-[50%] order-1 tablet:order-2 h-full'>
+                <div className='flex flex-col tablet:w-[50%] order-1 tablet:order-2 h-auto'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Experience</h2>
                     <div className='experience-box'>
                         {experience.map((e, index) => (

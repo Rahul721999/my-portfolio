@@ -43,7 +43,7 @@ const Expcard = ({ experience }) => {
             </div>
             <div className='Card-body m-3 h-[63px] w-auto overflow-scroll'>
                 {body.map((e, index) => (
-                    <p key={index} className=' text-left tablet:text-justify font-extralight text-xs'>– {e}</p>
+                    <p key={index} className=' text-left laptop:text-justify font-extralight text-xs'>– {e}</p>
                 ))}
             </div>
         </div>

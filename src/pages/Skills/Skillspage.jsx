@@ -40,10 +40,10 @@ export default function Skills() {
                     tablet:slidesPerView={'4'}
                     coverflowEffect={{
                         rotate: 50,
-                        stretch: 0,
+                        stretch: -50,
                         depth: 100,
                         modifier: 1,
-                        slideShadows: true,
+                        slideShadows: false,
                     }}
                     loop={true}
                     speed={600}

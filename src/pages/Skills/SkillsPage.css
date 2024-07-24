@@ -1,14 +1,8 @@
 .cards-container {
-    scroll-behavior: smooth;
-    overflow: scroll;
     padding: .5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
-    width: 90%;
-    height: 80%;
-
 }
 
 .swiper-pagination-bullet {

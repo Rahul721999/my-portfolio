@@ -6,7 +6,7 @@
 .contact-form {
     margin: 0 auto;
     max-width: 70rem;
-    padding: 5rem;
+    padding: 2rem;
     width: 100%;
 }
 
@@ -30,6 +30,7 @@
 @media(min-width: 768px){
     .contact-form {
         width: 70%;
+        padding: 5rem;
     }
 }
 
@@ -71,8 +72,14 @@
 }
 
 .contact-form .textarea-field textarea {
-    height: 350px;
+    height: 200px;
     resize: none;
+}
+
+@media (min-width: 1280px) {
+    .contact-form .textarea-field textarea {
+        height: 320px;
+    }
 }
 
 .contact-form .selected-field{

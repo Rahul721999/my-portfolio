@@ -3,7 +3,7 @@ import { Scroller } from '../../components';
 import { SkillCards } from '../../components';
 import './SkillsPage.css';
 
-import { Pagination, EffectCoverflow } from 'swiper/modules';
+import { Pagination, EffectCoverflow, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -39,14 +39,17 @@ export default function Skills() {
                     slidesPerView={'3'}
                     tablet:slidesPerView={'4'}
                     coverflowEffect={{
-                      rotate: 50,
-                      stretch: 0,
-                      depth: 100,
-                      modifier: 1,
-                      slideShadows: true,
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
                     }}
-                    pagination={true}
-                    modules={[EffectCoverflow, Pagination]}
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 2500, disableOnInteraction: false }} // Add autoplay settings here
+                    modules={[EffectCoverflow, Pagination, Scrollbar, A11y, Autoplay, Mousewheel]}
+                    slideToClickedSlide={true}
+                    mousewheel={true}
                     className="mySwiper"
                 >{skills.map((category, index) => (
                     <SwiperSlide key={index}>

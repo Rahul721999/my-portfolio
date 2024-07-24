@@ -16,15 +16,22 @@ export default function About() {
                 {/* Default view of About section */}
                 <h1 className='text-4xl font-bold flex justify-center laptop:text-6xl items-center mb-12'>About&nbsp;<span className='text-cyan'>Me</span></h1>
                 <AboutImg />
-                <h3 className='text-2xl laptop:text-3xl font-bold gradient-text'>Rust Software Developer</h3>
-                <p className="italic text-pretty items-center flex tablet:text-lg text-sm tablet:text-left my-5 mb-10 ">
-                    As a software developer,
-                    I'm passionate about building robust, efficient, and scalable apps.
-                    I'm an expert in Rust programming language and full-stack development,
-                    with skills in JavaScript, HTML/CSS, Rust, and SQL.
-                    I stay up-to-date with latest tech and best practices
-                    and collaborate to create innovative solutions that make a positive impact.
-                </p>
+                <h3 className='text-2xl laptop:text-3xl font-bold gradient-text'>Software Engineer</h3>
+
+                <div className="flex flex-col text-center italic my-5 mb-10 tablet:text-lg text-sm font-light">
+                    <p>
+                        My journey into the world of software development started with a curiosity about how websites are built and function.
+                        Over the years, I've honed my skills through various projects, both personal and professional, 
+                        continuously learning and adapting to the ever-evolving landscape of web technologies.
+                    </p>
+                    <span className='mt-10 text-xl font-bold text-[var(--main-color)]'>Welcome to the World of a Visionary Software Artisan!
+
+</span>
+                    <p>
+                        I believe that the best web applications are born from a blend of creativity and technical expertise. I approach every project with a user-first mindset, aiming to create solutions that are not only functional but also enjoyable to use.
+                    </p>
+                </div>
+
                 <div className="w-full h-12 flex justify-center">
                     <a className="btn-type1" onClick={viewMore}>Read More</a>
                 </div>

@@ -45,7 +45,9 @@ export default function Skills() {
                         modifier: 1,
                         slideShadows: true,
                     }}
-                    pagination={{ clickable: true }}
+                    loop={true}
+                    speed={600}
+                    pagination={{ clickable: true, dynamicBullets: true }}
                     autoplay={{ delay: 2500, disableOnInteraction: false }} // Add autoplay settings here
                     modules={[EffectCoverflow, Pagination, Scrollbar, A11y, Autoplay, Mousewheel]}
                     slideToClickedSlide={true}

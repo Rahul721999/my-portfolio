@@ -69,7 +69,7 @@ function ReadMore({ showMore }) {
             <h1 className='text-4xl font-bold flex justify-center laptop:text-6xl items-center mb-12'>My&nbsp;<span className='text-cyan'>Journey</span></h1>
 
             {/* My Journey container */}
-            <div className='journey-container flex tablet:flex-col w-[100%] tablet:w-[90%] laptop:w-[80%] h-[70%] overflow-scroll pl-2'>
+            <div className='journey-container flex tablet:flex-col w-[100%] tablet:w-[90%] laptop:w-[80%] h-[650px] overflow-scroll pl-2'>
                 {/* Education section */}
                 <div className='flex flex-col w-full tablet:w-[50%] order-2 tablet:order-1 h-auto pb-5'>
                     <h2 className='title text-2xl tablet:text-4xl font-semibold'>Education</h2>

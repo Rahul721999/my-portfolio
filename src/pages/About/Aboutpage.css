@@ -3,9 +3,13 @@
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
 }
-
+@media (min-width: 1280px) {
+    .journey-container{
+        gap: 3rem;
+    }
+}
 .experience-box,
 .education-box {
     position: relative;

@@ -26,11 +26,18 @@ const Photo = () => {
                     className="absolute w-full h-full"
                     fill="transparent"
                 >
+                    <defs>
+                        {/* Define the gradient */}
+                        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style={{ stopColor: "var(--text-color)", stopOpacity: 1 }} />
+                            <stop offset="100%" style={{ stopColor: "var(--main-color)", stopOpacity: 1 }} />
+                        </linearGradient>
+                    </defs>
                     <motion.circle
                         cx="80"
                         cy="80"
                         r="78"
-                        stroke="var(--text-color)"
+                        stroke="url(#gradientStroke)"
                         strokeWidth="1"
                         strokeLinecap="round"
                         strokeLinejoin="round"

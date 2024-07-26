@@ -36,22 +36,22 @@ const Photo = () => {
                     <motion.circle
                         cx="80"
                         cy="80"
-                        r="78"
+                        r="77"
                         stroke="url(#gradientStroke)"
-                        strokeWidth="1"
+                        strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        initial={{ strokeDasharray: "2 120 25 20 10 2" }}
+                        // initial={{ strokeDasharray: "2 120 25 20 10 2" }}
                         animate={{
                             strokeDasharray: [
-                                "2 120 25 20 10 2",
-                                "15 5 95 60 15 30",
-                                "15 10 35 50 2 60"
+                                "2 10 20 5",
+                                "15 3 40 10",
+                                "20 5 2 10"
                             ],
-                            rotate: [0, 360],
+                            rotate: [120, 360],
                         }}
                         transition={{
-                            duration: 20,
+                            duration: 60,
                             repeat: Infinity,
                             repeatType: "reverse",
                         }}

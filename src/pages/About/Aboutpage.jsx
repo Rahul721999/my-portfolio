@@ -91,7 +91,7 @@ function ReadMore({ showMore }) {
                 </div>
             </div>
             <div className="w-full h-12 flex justify-center mt-10">
-                <a className="btn-type1" onClick={showMore}>Close</a>
+                <a className="btn-type2" onClick={showMore}>Close</a>
             </div>
         </section>
     )

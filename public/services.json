@@ -1,0 +1,14 @@
+{
+    "services" : [
+        {
+            "category" : "Web Development"
+        },
+        {
+            "category" : "Frontend Development"
+        },
+        {
+            "category" : "Backend Development"
+        },
+        {"category" : "Software Development"}
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "services": [
+      {
+        "category": "Web Development",
+        "description": "Crafting dynamic, responsive, and visually appealing websites that deliver seamless user experiences across all devices. From concept to deployment, I bring your online presence to life with cutting-edge web technologies."
+      },
+      {
+        "category": "Frontend Development",
+        "description": "Specializing in creating intuitive, interactive, and user-friendly interfaces. I transform designs into functional, performant web applications using the latest in HTML, CSS, JavaScript, and modern frontend frameworks."
+      },
+      {
+        "category": "Backend Development",
+        "description": "Building robust, scalable, and secure server-side applications. With expertise in databases, APIs, and server architecture, I ensure your applications run smoothly behind the scenes, handling data efficiently."
+      },
+      {
+        "category": "Software Development",
+        "description": "Developing high-quality software solutions tailored to your needs. From desktop applications to complex systems, I deliver reliable, maintainable, and efficient code that powers your business operations."
+      }
+    ]
+  }
+  

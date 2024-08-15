@@ -1,0 +1,23 @@
+.service-cards-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default */
+    /* grid-auto-rows: minmax(150px, auto); */
+    justify-items: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Gap between items */
+    padding: 0 20px; /* Padding to prevent overflow */
+    overflow: scroll;
+  
+    /* For tablet or mid-size screens, display in 2 columns */
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  
+    /* For laptop screens, display in a single row */
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+  }
+  

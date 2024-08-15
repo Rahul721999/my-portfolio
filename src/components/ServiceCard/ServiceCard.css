@@ -1,0 +1,143 @@
+/*
+.container {
+    perspective: 900px;
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    border-radius: 2rem;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  
+  .front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    backface-visibility: hidden;
+    color: var(--text-color);
+    background: linear-gradient(-135deg, 
+  var(--bg-color), var(--main-color));
+  }
+  
+  .front, .back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .back {
+    transform: rotateY(180deg) rotateZ(180deg);
+  }
+  */
+  
+/*------------new css-------------------*/
+.container {
+  display: flex;
+  justify-content: center; 
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  width: 22em;
+  padding: 2em 0;
+  background: linear-gradient(-135deg, 
+  var(--bg-color), var(--main-color));
+  transition: all 0.35s ease;
+
+}
+
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-color);
+  height: 4px;
+}
+
+.card::before {
+  width: 0;
+  opacity: 0;
+  transition: opacity 0 ease, width 0 ease;
+  transition-delay: 0.5s;
+}
+
+.card::after {
+  width: 100%;
+  background: var(--bg-color);
+  transition: width 0.5s ease;
+}
+
+.card .content {
+  width: 18em;
+  max-width: 80%;
+}
+
+.card .logo {
+  margin: 0 0 1em;
+  width: 10.625em;
+  transition: all 0.35s ease;
+}
+
+.card .h6 {
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.card .hover_content {
+  overflow: hidden;
+  max-height: 0;
+  transform: translateY(1em);
+  transition: all 0.55s ease;
+}
+
+.card .hover_content p {
+  margin: 1.5em 0 0;
+  color: var(--text-color);
+  line-height: 1.4em;
+}
+
+.card:hover {
+  width: 24em;
+  
+  box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
+}
+
+.card:hover::before {
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease, width 0.5s ease;
+  transition-delay: 0;
+}
+
+.card:hover::after {
+  width: 0;
+  opacity: 0;
+  transition: width 0 ease;
+}
+
+.card:hover .logo {
+  margin-bottom: 0.5em;
+}
+
+.card:hover .hover_content {
+  max-height: 20em;
+  transform: none;
+}

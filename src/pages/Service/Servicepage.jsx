@@ -8,6 +8,12 @@ import 'swiper/css/scrollbar';
 
 const Service = () => {
   const [services, setService] = useState([]);
+  const [viewProject, setViewProject] = useState(false);
+
+  const handleClick = () => {
+    setViewProject(!viewProject);
+  }
+
   useEffect(() => {
     fetch('./services.json')
       .then(response => {
@@ -22,25 +28,48 @@ const Service = () => {
       });
   }, []);
 
+  if (!viewProject) {
+    return (
+      <section id="service" className="h-screen section-container">
+        <h1 className="text-4xl font-bold flex justify-center laptop:text-6xl items-center">
+          My&nbsp;<span className="text-cyan">Services</span>
+        </h1>
+        <div className=" mt-8 mb-8
+        w-full h-[70%] items-center justify-center
+        gap-10 tablet:gap-20 
+        service-cards-container">
+          {services.map((service, index) => (
+            <ServiceCard key={index} title={service.category} description={service.description} />
+          ))}
+        </div>
+        <div className="w-full h-12 flex justify-center">
+          <a className="btn-type1 text-sm" onClick={handleClick}>Projects!</a>
+        </div>
+      </section>
+
+    )
+  } else {
+    return (<ViewProject show={handleClick} />)
+  }
+}
+
+export default Service;
+
+
+function ViewProject({ show }) {
   return (
     <section id="service" className="h-screen section-container">
       <h1 className="text-4xl font-bold flex justify-center laptop:text-6xl items-center">
-        My&nbsp;<span className="text-cyan">Services</span>
+        My&nbsp;<span className="text-cyan">Projects</span>
       </h1>
       <div className=" mt-8 mb-8
         w-full h-[70%] items-center justify-center
         gap-10 tablet:gap-20 
         service-cards-container">
-        {services.map((service, index) => (
-          <ServiceCard key={index} title={service.category} description={service.description} />
-        ))}
       </div>
       <div className="w-full h-12 flex justify-center">
-        <a className="btn-type1 text-sm">Projects!</a>
+        <a className="btn-type1 text-sm" onClick={show}>Close</a>
       </div>
     </section>
-
   )
 }
-
-export default Service;

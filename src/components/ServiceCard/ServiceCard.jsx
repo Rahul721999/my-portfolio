@@ -19,7 +19,7 @@ export default function ServiceCard({ title, description }) {
 
     /* ---------------------new card design---------------------*/
     <section class="container">
-      <div class="card items-center">
+      <div class="card items-center w-[275px] hover:w-[275px] tablet:w-[20rem] tablet:hover:w-[20rem]">
         <div class="content w-full">
           <p class="logo">-</p>
           <div class="h6 font-semibold w-7 text-base tablet:text-lg">{service_category}</div>

@@ -44,7 +44,9 @@
 /*------------new css-------------------*/
 .container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  align-items: start;
+  height: 50%;
 }
 
 .card {
@@ -52,12 +54,13 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
-  width: 22em;
+  min-width: 300px;
+  width: 20em;
   padding: 2em 0;
   background: linear-gradient(-135deg, 
   var(--bg-color), var(--main-color));
   transition: all 0.35s ease;
-
+  
 }
 
 .card::before, .card::after {
@@ -115,8 +118,7 @@
 }
 
 .card:hover {
-  width: 24em;
-  
+  width: 20em;
   box-shadow: 0 10px 20px 0 rgba(32, 32, 36, 0.12);
 }
 

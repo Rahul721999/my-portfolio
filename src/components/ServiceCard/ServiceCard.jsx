@@ -18,13 +18,13 @@ export default function ServiceCard({ title, description }) {
     // </div>
 
     /* ---------------------new card design---------------------*/
-    <section class="container w-1/5">
+    <section class="container">
       <div class="card items-center">
         <div class="content w-full">
           <p class="logo">-</p>
-          <div class="h6 font-semibold w-7">{service_category}</div>
+          <div class="h6 font-semibold w-7 text-base tablet:text-lg">{service_category}</div>
           <div class="hover_content">
-            <p className='text-sm tablet:text-base'>{service_description}</p>
+            <p className='text-xm tablet:text-sm'>{service_description}</p>
           </div>
         </div>
       </div>

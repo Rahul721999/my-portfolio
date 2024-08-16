@@ -1,12 +1,11 @@
 .service-cards-container {
     display: grid;
     grid-template-columns: 1fr; /* Single column by default */
-    /* grid-auto-rows: minmax(150px, auto); */
     justify-items: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     gap: 20px; /* Gap between items */
     padding: 0 20px; /* Padding to prevent overflow */
-    overflow: scroll;
+    overflow-y: scroll;
   
     /* For tablet or mid-size screens, display in 2 columns */
     @media (min-width: 768px) {

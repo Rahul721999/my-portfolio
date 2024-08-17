@@ -3,7 +3,10 @@
         {
             "title": "My-Portfolio",
             "description": "A personal portfolio website to showcase my client side skills & experience.",
-            "framework": ["React.js", "TailWind"],
+            "framework": [
+                "React.js",
+                "TailWind"
+            ],
             "technologies": [],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
@@ -11,48 +14,91 @@
         {
             "title": "Exchange-engine microservice",
             "description": "A microservice to facilitate real-time crypto exchange & transaction,  designed for scalability and performance.",
-            "framework": ["Actix.rs"],
-            "technologies": ["REST", "WebSocket", "Multi-threading"],
+            "framework": [
+                "Actix.rs"
+            ],
+            "technologies": [
+                "REST",
+                "WebSocket",
+                "MultiThreading"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
         },
         {
             "title": "Chat-widget client (RUST)",
             "description": "A lightweight chat widget, allowing for real-time messaging. Created for a Europe based service.",
-            "framework": ["Yew.rs"],
-            "technologies": ["Yew.rs", "WebAssembly", "WebSocket"],
+            "framework": [
+                "Yew.rs"
+            ],
+            "technologies": [
+                "Yew.rs",
+                "WebAssembly",
+                "WebSocket"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
         },
         {
             "title": "Chat-widget backend",
             "description": "A robust and scalable backend for a chat application, developed with WebSocket to support real-time communication.",
-            "framework": ["Axum.rs"],
-            "technologies": ["WebSocket", "Microservice"],
+            "framework": [
+                "Axum.rs"
+            ],
+            "technologies": [
+                "WebSocket",
+                "Microservice"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
         },
         {
             "title": "P2P video-calling app",
             "description": "A video-calling app using WebRTC, supporting 1-1 calls with features like muting & disable video, and more.",
-            "framework": ["React.js", "TailWind", "Actix.rs"],
-            "technologies": ["WebRTC", "WebSocket"],
+            "framework": [
+                "React.js",
+                "TailWind",
+                "Actix.rs"
+            ],
+            "technologies": [
+                "WebRTC",
+                "WebSocket"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
         },
         {
             "title": "RapidShot-Monitor",
             "description": "A real-time employee monitoring tool that provides info and analytics, helping user to track progress.",
-            "framework": ["React.js", "Actix.rs", "Tokio.rs"],
-            "technologies": ["WebSocket", "REST", "Multi-threading", "Hashing", "Salting", "Cryptography"],
+            "framework": [
+                "React.js",
+                "Actix.rs",
+                "Tokio.rs"
+            ],
+            "technologies": [
+                "WebSocket",
+                "REST",
+                "Multi_threading",
+                "Hashing",
+                "Salting",
+                "Cryptography"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": "https://rapidshotmonitor.com"
         },
         {
             "title": "Password-manager-webapp",
             "description": "A secure web application for managing and storing passwords, with encryption and user authentication.",
-            "framework": ["React.js", "Actix.rs", "MongoDB"],
-            "technologies": ["Hashing", "Salting", "Cryptography"],
+            "framework": [
+                "React.js",
+                "Actix.rs",
+                "MongoDB"
+            ],
+            "technologies": [
+                "Hashing",
+                "Salting",
+                "Cryptography"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
             "demo": ""
         }

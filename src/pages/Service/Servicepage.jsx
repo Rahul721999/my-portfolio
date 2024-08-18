@@ -35,7 +35,7 @@ const Service = () => {
           My&nbsp;<span className="text-cyan">Services</span>
         </h1>
         <div className=" mt-8 mb-8
-        w-full h-[70%] items-center justify-center
+        w-full h-[70%] items-center justify-center overflow-x-hidden
         gap-10 tablet:gap-20 
         service-cards-container">
           {services.map((service, index) => (
@@ -80,7 +80,7 @@ function ViewProject({ show }) {
       <div className="
         project-cards-container
         mt-8 mb-8
-        w-[78%] tablet:w-[90%] laptop:w-[70%] h-[65%] 
+        w-[78%] tablet:w-[90%] laptop:w-[70%] overflow-y-hidden
         gap-10 tablet:gap-15
         ">
           {projects.map((project) =>(

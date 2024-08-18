@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "My-Portfolio",
-            "description": "A personal portfolio website to showcase my client side skills & experience.",
+            "description": "A personal portfolio responsive website to showcase my UI development skills & experience, built with React.js.",
             "framework": [
                 "HTML",
                 "CSS",
@@ -19,7 +19,7 @@
         },
         {
             "title": "Exchange-engine microservice",
-            "description": "A microservice to facilitate real-time crypto exchange & transaction,  designed for scalability and performance.",
+            "description": "A microservice to facilitate real-time crypto exchange & transaction named 'Exchange-engine', designed for efficiency, scalability and performance. Able to handle tons of users.",
             "framework": [
                 "Rust",
                 "Actix.rs",
@@ -36,7 +36,7 @@
         },
         {
             "title": "Chat-widget client (RUST)",
-            "description": "A lightweight chat widget, allowing for real-time messaging. Created for a Europe based service.",
+            "description": "A lightweight chat widget, allowing for real-time messaging. Created for a Europe based service-website, used for internal use.",
             "framework": [
                 "Rust",
                 "Yew.rs"
@@ -78,7 +78,7 @@
                 "WebRTC",
                 "WebSocket"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
+            "sourceCode": "https://github.com/Rahul721999/Rust-Video_chat_app",
             "demo" : null
         },
         {
@@ -100,7 +100,7 @@
                 "Salting",
                 "Cryptography"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
+            "sourceCode": null,
             "demo": "https://screenshot.rapidinnovation.tech/"
         },
         {
@@ -116,7 +116,7 @@
                 "Salting",
                 "Cryptography"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
+            "sourceCode": "https://github.com/Rahul721999/password-manager-web-app",
             "demo" : null
         }
     ]

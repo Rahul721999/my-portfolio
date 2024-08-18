@@ -33,7 +33,7 @@ export default function About() {
                 </div>
 
                 <div className="w-full h-12 flex justify-center">
-                    <a className="btn-type1" onClick={viewMore}>Read More</a>
+                    <a className="btn-type1" onClick={viewMore}>MyJourney</a>
                 </div>
             </section>
         )

@@ -1,0 +1,123 @@
+{
+    "projects": [
+        {
+            "title": "My-Portfolio",
+            "description": "A personal portfolio responsive website to showcase my UI development skills & experience, built with React.js.",
+            "framework": [
+                "HTML",
+                "CSS",
+                "JS",
+                "React.js",
+                "TailWind"
+            ],
+            "technologies": [
+                "@media-query",
+                "Responsive"
+            ],
+            "sourceCode": "https://github.com/Rahul721999/",
+            "demo": null
+        },
+        {
+            "title": "Exchange-engine microservice",
+            "description": "A microservice to facilitate real-time crypto exchange & transaction named 'Exchange-engine', designed for efficiency, scalability and performance. Able to handle tons of users.",
+            "framework": [
+                "Rust",
+                "Actix.rs",
+                "Tokio-RT",
+                "Tungsenite"
+            ],
+            "technologies": [
+                "REST",
+                "WebSocket",
+                "MultiThreading"
+            ],
+            "sourceCode": "https://github.com/Rahul721999/",
+            "demo" : null
+        },
+        {
+            "title": "Chat-widget client (RUST)",
+            "description": "A lightweight chat widget, allowing for real-time messaging. Created for a Europe based service-website, used for internal use.",
+            "framework": [
+                "Rust",
+                "Yew.rs"
+            ],
+            "technologies": [
+                "Yew.rs",
+                "WebAssembly",
+                "WebSocket"
+            ],
+            "sourceCode": null,
+            "demo": "https://avaya.com"
+        },
+        {
+            "title": "Chat-widget backend",
+            "description": "A robust and scalable backend for a chat application, developed with WebSocket to support real-time communication.",
+            "framework": [
+                "Rust",
+                "Axum.rs"
+            ],
+            "technologies": [
+                "Multi-Threading",
+                "WebSocket",
+                "Microservice"
+            ],
+            "sourceCode": null,
+            "demo" : null
+        },
+        {
+            "title": "P2P video-calling app",
+            "description": "A video-calling app using WebRTC, supporting 1-1 calls with features like muting & disable video, and more.",
+            "framework": [
+                "JS",
+                "React.js",
+                "TailWind",
+                "Rust",
+                "Actix.rs"
+            ],
+            "technologies": [
+                "WebRTC",
+                "WebSocket"
+            ],
+            "sourceCode": "https://github.com/Rahul721999/Rust-Video_chat_app",
+            "demo" : null
+        },
+        {
+            "title": "RapidShot-Monitor",
+            "description": "A real-time employee monitoring tool that provides info and analytics, helping user to track progress.",
+            "framework": [
+                "React.js",
+                "Actix.rs",
+                "Tokio.rs",
+                "MongoDB",
+                "AWS-S3"
+            ],
+            "technologies": [
+                "WebSocket",
+                "REST",
+                "Cron-Job", 
+                "Multi-Threading",
+                "Slow-Hashing",
+                "Salting",
+                "Cryptography"
+            ],
+            "sourceCode": null,
+            "demo": "https://screenshot.rapidinnovation.tech/"
+        },
+        {
+            "title": "Password-manager-webapp",
+            "description": "A secure web application for managing and storing passwords, with encryption and user authentication.",
+            "framework": [
+                "React.js",
+                "Actix.rs",
+                "PostgreSQL"
+            ],
+            "technologies": [
+                "Slow-Hashing",
+                "Salting",
+                "Cryptography"
+            ],
+            "sourceCode": "https://github.com/Rahul721999/password-manager-web-app",
+            "demo" : null
+        }
+    ]
+}

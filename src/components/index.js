@@ -8,4 +8,5 @@ export {default as Scroller} from './SkillScroller/SkillScroller.jsx';
 export {default as useTypedEffect} from './TypeEffect/TypeEffect.jsx';
 export {default as SkillCards} from './SkillCards/SkillCards.jsx';
 export {default as ServiceCard} from './ServiceCard/ServiceCard.jsx';
+export {default as ProjectCard} from './ProjectCards/ProjectCard.jsx';
 export {Expcard, EducationCard} from './ExpCards/Expcard.jsx';

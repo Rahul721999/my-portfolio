@@ -4,18 +4,27 @@
             "title": "My-Portfolio",
             "description": "A personal portfolio website to showcase my client side skills & experience.",
             "framework": [
+                "HTML",
+                "CSS",
+                "JS",
                 "React.js",
                 "TailWind"
             ],
-            "technologies": [],
+            "technologies": [
+                "@media-query",
+                "Responsive"
+            ],
             "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "demo": null
         },
         {
             "title": "Exchange-engine microservice",
             "description": "A microservice to facilitate real-time crypto exchange & transaction,  designed for scalability and performance.",
             "framework": [
-                "Actix.rs"
+                "Rust",
+                "Actix.rs",
+                "Tokio-RT",
+                "Tungsenite"
             ],
             "technologies": [
                 "REST",
@@ -23,12 +32,13 @@
                 "MultiThreading"
             ],
             "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "demo" : null
         },
         {
             "title": "Chat-widget client (RUST)",
             "description": "A lightweight chat widget, allowing for real-time messaging. Created for a Europe based service.",
             "framework": [
+                "Rust",
                 "Yew.rs"
             ],
             "technologies": [
@@ -36,28 +46,32 @@
                 "WebAssembly",
                 "WebSocket"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "sourceCode": null,
+            "demo": "https://avaya.com"
         },
         {
             "title": "Chat-widget backend",
             "description": "A robust and scalable backend for a chat application, developed with WebSocket to support real-time communication.",
             "framework": [
+                "Rust",
                 "Axum.rs"
             ],
             "technologies": [
+                "Multi-Threading",
                 "WebSocket",
                 "Microservice"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "sourceCode": null,
+            "demo" : null
         },
         {
             "title": "P2P video-calling app",
             "description": "A video-calling app using WebRTC, supporting 1-1 calls with features like muting & disable video, and more.",
             "framework": [
+                "JS",
                 "React.js",
                 "TailWind",
+                "Rust",
                 "Actix.rs"
             ],
             "technologies": [
@@ -65,7 +79,7 @@
                 "WebSocket"
             ],
             "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "demo" : null
         },
         {
             "title": "RapidShot-Monitor",
@@ -73,18 +87,21 @@
             "framework": [
                 "React.js",
                 "Actix.rs",
-                "Tokio.rs"
+                "Tokio.rs",
+                "MongoDB",
+                "AWS-S3"
             ],
             "technologies": [
                 "WebSocket",
                 "REST",
-                "Multi_threading",
-                "Hashing",
+                "Cron-Job", 
+                "Multi-Threading",
+                "Slow-Hashing",
                 "Salting",
                 "Cryptography"
             ],
             "sourceCode": "https://github.com/Rahul721999/",
-            "demo": "https://rapidshotmonitor.com"
+            "demo": "https://screenshot.rapidinnovation.tech/"
         },
         {
             "title": "Password-manager-webapp",
@@ -92,15 +109,15 @@
             "framework": [
                 "React.js",
                 "Actix.rs",
-                "MongoDB"
+                "PostgreSQL"
             ],
             "technologies": [
-                "Hashing",
+                "Slow-Hashing",
                 "Salting",
                 "Cryptography"
             ],
             "sourceCode": "https://github.com/Rahul721999/",
-            "demo": ""
+            "demo" : null
         }
     ]
 }

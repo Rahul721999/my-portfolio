@@ -26,7 +26,14 @@
 @media (min-width: 768px) {
   .project-cards-container {
     display: grid;
-    gap: 15px;
-    overflow-x: hidden;
+    height: 70%;
+    overflow-y: scroll
+  }
+}
+@media (min-width: 820px) {
+  .project-cards-container{
+    display: grid;
+    height: 70%;
+    overflow-y: scroll;
   }
 }

@@ -35,7 +35,7 @@ const Tag = ({ tag_name }) => {
           px-3 py-1 mx-2
           text-xs font-semibold 
           min-w-20 max-h-6
-          text-[var(--bg-color)]'
+          text-[var(--text-color)]'
       > • {tag_name}
       </p>
   )

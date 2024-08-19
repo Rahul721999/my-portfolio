@@ -31,16 +31,6 @@
   background: linear-gradient(to right, var(--bg-color), var(--text-color), transparent);
 }
 
-.languages {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll;
-
-}
 
 @media (min-width: 1280px){
   .laptop\:grid-view {

@@ -14,12 +14,12 @@
                 "@media-query",
                 "Responsive"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
+            "sourceCode": "https://github.com/Rahul721999/my-portfolio",
             "demo": null
         },
         {
             "title": "Exchange-engine microservice",
-            "description": "A microservice to facilitate real-time crypto exchange & transaction named 'Exchange-engine', designed for efficiency, scalability and performance. Able to handle tons of users.",
+            "description": "A high-performance microservice called 'Exchange-engine' built for real-time cryptocurrency exchanges and transactions. Engineered for efficiency, scalability, and reliability, it's capable of handling a large number of users simultaneously while ensuring optimal performance.",
             "framework": [
                 "Rust",
                 "Actix.rs",
@@ -31,8 +31,8 @@
                 "WebSocket",
                 "MultiThreading"
             ],
-            "sourceCode": "https://github.com/Rahul721999/",
-            "demo" : null
+            "sourceCode": null,
+            "demo": null
         },
         {
             "title": "Chat-widget client (RUST)",
@@ -62,7 +62,7 @@
                 "Microservice"
             ],
             "sourceCode": null,
-            "demo" : null
+            "demo": null
         },
         {
             "title": "P2P video-calling app",
@@ -79,7 +79,7 @@
                 "WebSocket"
             ],
             "sourceCode": "https://github.com/Rahul721999/Rust-Video_chat_app",
-            "demo" : null
+            "demo": null
         },
         {
             "title": "RapidShot-Monitor",
@@ -94,7 +94,7 @@
             "technologies": [
                 "WebSocket",
                 "REST",
-                "Cron-Job", 
+                "Cron-Job",
                 "Multi-Threading",
                 "Slow-Hashing",
                 "Salting",
@@ -117,7 +117,7 @@
                 "Cryptography"
             ],
             "sourceCode": "https://github.com/Rahul721999/password-manager-web-app",
-            "demo" : null
+            "demo": null
         }
     ]
 }

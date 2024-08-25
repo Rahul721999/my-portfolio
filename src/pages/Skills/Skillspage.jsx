@@ -26,12 +26,12 @@ export default function Skills() {
             });
     }, []);
     return (
-        <section id='skills' className='section-container secondary-color'>
+        <section id='skills' className='section-container px-4 tablet:px-36 secondary-color'>
             <h1 className='text-4xl font-bold flex justify-center laptop:text-6xl items-center'>
                 My&nbsp;<span className='text-[var(--main-color)]'>skills</span>
             </h1>
             <Scroller />
-            <div className='bg-[var(--bg-color)] w-[90%] h-[80%] pb-6 pt-6 text-sm cards-container'>
+            <div className='bg-[var(--bg-color)] w-full tablet:w-[90%] h-[80%] pb-6 pt-6 text-sm cards-container'>
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}

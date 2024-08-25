@@ -20,11 +20,12 @@
   flex-direction: row;
   gap: 10px;
   overflow-x: scroll;
-  padding: 0 10px;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
   .project-cards-container {
+    padding: 0 10px;
     display: grid;
     height: 70%;
     overflow-y: scroll
@@ -32,6 +33,7 @@
 }
 @media (min-width: 820px) {
   .project-cards-container{
+    padding: 0 10px;
     display: grid;
     height: 70%;
     overflow-y: scroll;

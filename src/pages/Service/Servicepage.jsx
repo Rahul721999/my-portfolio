@@ -81,8 +81,7 @@ function ViewProject({ show }) {
         project-cards-container
         mt-8 mb-8 
         h-inherit tablet:h-[70%]
-        w-[78%] tablet:w-[90%] laptop:w-[70%] 
-        
+        w-full tablet:w-[90%] laptop:w-[70%] 
         gap-10 tablet:gap-15
         ">
           {projects.map((project) =>(

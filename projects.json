@@ -118,6 +118,46 @@
             ],
             "sourceCode": "https://github.com/Rahul721999/password-manager-web-app",
             "demo": null
+        },
+        {
+            "title": "Image-classification with CNN",
+            "description": "A project created in final year of college to understand the concept of Deep Learning, Nural network, AI",
+            "framework": [
+                "Python",
+                "Keras",
+                "TensorFlow",
+                "PyPlot",
+                "SKlearn"
+            ],
+            "technologies": [
+                "CNN",
+                "Deep Learning",
+                "AI",
+                "Data Preprocessing"
+            ],
+            "sourceCode": null,
+            "demo": null
+        },
+        {
+            "title": "Handwritten Digit Classification",
+            "description": "A project aimed at classifying handwritten digits using Convolutional Neural Networks (CNN). It was developed to explore Deep Learning techniques and their applications in image recognition.",
+            "framework": [
+                "Python",
+                "Keras",
+                "TensorFlow",
+                "Matplotlib",
+                "SKlearn"
+            ],
+            "technologies": [
+                "CNN",
+                "Deep Learning",
+                "Artificial Intelligence",
+                "Image Recognition",
+                "MNIST Dataset"
+            ],
+            "sourceCode": null,
+            "demo": null
         }
+        
     ]
 }

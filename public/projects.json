@@ -1,16 +1,34 @@
 {
     "projects": [
         {
+            "title": "Vesting-Token DApp",
+            "description": "A Web3 application on the Solana blockchain for creating and managing vesting accounts, enabling companies to automate and secure token distribution with fast, low-cost transactions.",
+            "framework": [
+                "Anchor",
+                "React.js",
+                "TypeScript",
+                "Tailwind CSS"
+            ],
+            "technologies": [
+                "Solana",
+                "Rust",
+                "TypeScript",
+                "Web3.js"
+            ],
+            "sourceCode": "https://github.com/Rahul721999/learning-solana/tree/main/token-vesting",
+            "demo": null
+        },
+        {
             "title": "My-Portfolio",
             "description": "A personal portfolio responsive website to showcase my UI development skills & experience, built with React.js.",
             "framework": [
                 "HTML",
                 "CSS",
-                "JS",
                 "React.js",
                 "TailWind"
             ],
             "technologies": [
+                "JS",
                 "@media-query",
                 "Responsive"
             ],
@@ -158,6 +176,5 @@
             "sourceCode": null,
             "demo": null
         }
-        
     ]
 }

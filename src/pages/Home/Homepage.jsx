@@ -8,7 +8,6 @@ const Home = () => {
     useTypedEffect(el);
     return (
         <section id="home" className="flex flex-col tablet:flex-row justify-start items-center section-container">
-            <title>Rahul Mondal - Rust Developer | AI Enthusiast | Solana Developer </title>
             <div className="tablet:w-3/5 order-2 tablet:order-1 mt-5">
                 <h1 className="text-center tablet:text-left text-3xl tablet:text-5xl laptop:text-6xl font-bold w-full leading-tight flex">
                     <span className="intro-tag">Hi, I'm&nbsp;</span>

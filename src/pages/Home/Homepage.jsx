@@ -8,6 +8,7 @@ const Home = () => {
     useTypedEffect(el);
     return (
         <section id="home" className="flex flex-col tablet:flex-row justify-start items-center section-container">
+            <title>Rahul Mondal - Rust Developer | AI Enthusiast | Solana Developer </title>
             <div className="tablet:w-3/5 order-2 tablet:order-1 mt-5">
                 <h1 className="text-center tablet:text-left text-3xl tablet:text-5xl laptop:text-6xl font-bold w-full leading-tight flex">
                     <span className="intro-tag">Hi, I'm&nbsp;</span>
@@ -15,9 +16,9 @@ const Home = () => {
                 </h1>
                 <h3 className="tablet:text-3xl text-2xl font-bold my-1 designation-tag">And I'm a - <span ref={el} className="gradient-text"></span></h3>
                 <p className="text-pretty  flex italic tablet:text-lg text-sm tablet:text-left my-5 mb-10 ">
-                With a passion for Artificial Intelligence and three years of mastering Rust programming, 
-                I am an aspiring and versatile software artisan. 
-                My journey in the realm of technology has been fueled by a relentless drive to merge creativity with innovation.
+                    With a passion for Artificial Intelligence and three years of mastering Rust programming,
+                    I am an aspiring and versatile software artisan.
+                    My journey in the realm of technology has been fueled by a relentless drive to merge creativity with innovation.
                 </p>
                 <div className="w-80 h-12 flex justify-between">
                     <a href="./RahulMondal_resume.pdf" download={'./RahulMondal_resume.pdf'} className="btn-type1" >Hire Me!</a>
